@@ -211,9 +211,3 @@
 	year = {2017}
 }
 
-@inproceedings{TheNN,
-	author = {Mozer, M.},
-	title = {The Neural Network House: An Environment that Adapts to its Inhabitants},
-	year = {1998}
-}
-

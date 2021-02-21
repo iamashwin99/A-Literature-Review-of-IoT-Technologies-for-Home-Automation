@@ -492,7 +492,7 @@ literal "false"
 
  focused on the advantages of home automation such as - reduced installation
  cost, system stability, easy extension, aesthetically benefited and integration
- of mobile devices .
+ of mobile devices.
 \end_layout
 
 \begin_layout Standard
@@ -516,6 +516,101 @@ literal "false"
  has been developed by measuring power consumption throughout a year in
  different seasons.
  
+\end_layout
+
+\begin_layout Standard
+Another interesting approach by for implementing energy efficient automation
+ is presented by Michael C.
+ Mozer in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TheNN"
+literal "false"
+
+\end_inset
+
+, where they have developed a home system that essentially programs itself
+ by observing the lifestyle and desires of the inhabitants, and learning
+ to anticipate and accommodate their needs.The system controls basic residential
+ comfort systems-air heating, lighting, ventilation, and water heating.
+ They call the system ACHE.
+ ACHE has two objectives.
+ 
+\end_layout
+
+\begin_layout Itemize
+One is anticipation of inhabitants needs.
+ Lighting, air temperature, and ventilation should be maintained to the
+ inhabitants comfort; hot water should be available on demand.
+ When inhabitants manually adjust environmental setpoints, it is an indication
+ that their needs have not been satisfied and will serve as a training signal
+ for ACHE.
+ If ACHE can learn to anticipate needs, manual control of the environment
+ will be avoided.
+ 
+\end_layout
+
+\begin_layout Itemize
+The second objective of ACHE is energy conservation.
+ Lights should be set to the minimum intensity required; hot water should
+ be maintained at the minimum temperature needed to satisfy the demand;
+ only rooms that are likely to be occupied in the near future should be
+ heated; when several options exist to heat a room , the alternative minimizing
+ expected energy consumption should be selected.
+\end_layout
+
+\begin_layout Standard
+They archive the optimal control by defining an average energy cost function
+ as 
+\begin_inset Formula 
+\[
+\ensuremath{J\left(t_{0}\right)=\mathrm{E}\left[\lim_{\kappa\rightarrow\infty}\frac{1}{\kappa}\sum_{t=t_{0}+1}^{t_{0}+\kappa}d\left(x_{t}\right)+e\left(u_{t}\right)\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ $J
+\backslash
+left(t_{0}
+\backslash
+right),$ is The expected average cost,  starting at time $t_{0}$ , $d
+\backslash
+left(x_{t}
+\backslash
+right)$ is the discomfort cost associated with the environmental state $x$
+ at time $t,$ and $e
+\backslash
+left(u_{t}
+\backslash
+right)$ is the energy cost associated with the control decision $u$ at time
+ $t$ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The goal is to find an optimal control policy (a mapping from 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ to decisions 
+\begin_inset Formula $u_{t}$
+\end_inset
+
+) that minimises the expected average cost.
 \end_layout
 
 \begin_layout Standard
