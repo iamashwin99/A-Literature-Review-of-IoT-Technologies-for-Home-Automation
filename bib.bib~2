@@ -228,19 +228,3 @@
 	year = {2012}
 }
 
-@article{dgfig,
-	author = {{Komninos}, N. and {Philippou}, E. and {Pitsillides}, A.},
-	doi = {10.1109/COMST.2014.2320093},
-	journal = {IEEE Communications Surveys Tutorials},
-	number = {4},
-	pages = {1933--1954},
-	title = {Survey in Smart Grid and Smart Home Security: Issues, Challenges and Countermeasures},
-	volume = {16},
-	year = {2014}
-}
-
-@manual{nist,
-	author = {{U.S. Department of Commerce}, {National Institute of Standards and Technology}},
-	title = {NIST Framework and Roadmap for Smart Grid Interoperability Standards, Release 1.0 [Online] Available : http://www.nist.gov/public\_affairs/releases/upload/smartgrid\_interoperabilit y\_final.pdf}
-}
-

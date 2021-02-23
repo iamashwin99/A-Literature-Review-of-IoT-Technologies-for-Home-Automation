@@ -363,6 +363,10 @@ Authorization: access control of each entity must be defined in the network.
 Non repudiation: undeniable proof should exist for any claim of any entity
 \end_layout
 
+\begin_layout Subsection
+Impact Evaluation
+\end_layout
+
 \begin_layout Standard
 Any security attack can be divided into categories based on whether the
  attack affects the system: 
@@ -385,10 +389,6 @@ Active: Here the attack actively attempts to damage/affect the system network
  modification, denial of service and malicious software.
 \end_layout
 
-\begin_layout Subsection
-Impact Evaluation
-\end_layout
-
 \begin_layout Standard
 Now based on the impact of the attack to the system, the FIPS 199 standards
  can be used categorizing the attacks as Low level, Moderate level and High
@@ -406,11 +406,1245 @@ The architecture of the Smart home system is divided into internal and external
 \end_layout
 
 \begin_layout Subsection
+An outline of the assumed architecture
+\end_layout
+
+\begin_layout Standard
+The architecture of the Smart home system is divided into internal and external
+ networks, where, in this case, the Energy Service Interface (ESI) is in
+ contact with the smart grid, and manages communication with the external
+ system.
+ And the Energy Management System (EMS) manages the internal system.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Fig1An-overview-of-a-Smart-Homes-architecture.jpg
+	width 10cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An overview of a Smart Home's architecture, internal and external environments.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dgfig"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Smart Home Attacks
+\end_layout
+
+\begin_layout Standard
+Broadly categorizing, the major possible attacks possible on the Smart Home
+ system are in the following ways, when considered with regards to communication
+ with a Smart Grid: 
+\end_layout
+
+\begin_layout Description
+SH1) Attacks threatening successful device energy-consumption reporting
+ – When energy consumption of data is collected at very short intervals,
+ eavesdropping on such an information could be used to infer a lot about
+ the lifestyle of the residents, hence create a major risk to privacy.
+ Needless to say, how this data can be used to plan a more severe attack
+ on the resident (e.g.: burglary, kidnapping).
+ In the same place if it is managed to send false, or replayed data to the
+ EMS, a false extra financial burden can be created for the consumer.
+ This could also be achieved by impersonating the EMS rather than only “piggybac
+king” the network.
+ (Generally low impact)
+\end_layout
+
+\begin_layout Description
+SH2) Attacks aiming Energy Import/Export signal at ESI - As the ESI is an
+ entity in direct communication with the grid, any kind of message modification
+ in the import export communication at a large scale could significantly
+ impact the grid.
+ Repudiation is also an important threat under this scenario since we expect
+ the customer to be collaborating with an ESP for the management of his
+ DERs due to his lack of experience.
+ In such a case the customer should not be able to suggest that his ESP
+ did not react when it should have/ or reacted when it shouldn’t have.
+ (Generally moderate Impact) 
+\end_layout
+
+\begin_layout Description
+SH3) Physical meter tampering/reversal or removal – Mischievous customers
+ try to tamper with the meter to decrease the bill, which needs to be stopped.
+ (Generally Low impact) 
+\end_layout
+
+\begin_layout Description
+SH4) Attacks against remote home monitoring and control – These basically
+ include attacks where-in an adversary may impersonate the customer to control
+ the devices in different ways ( either switching on/off all devices or
+ maybe modifying the messages).
+ These attacks could have a low impact or may even be life threatening depending
+ on the device(s) being abused.
+ There is also the case of device impersonation where the commands sent
+ remotely by the user are somehow directed to a device other than they were
+ intended for.
+ Therefore, Non-repudiation becomes a major factor in dealing with such
+ attacks.
+ 
+\end_layout
+
+\begin_layout Description
+SH5) Attacks aiming the request for energy usage data -Eaves dropping on
+ the detailed bill of energy consumption by the user is again a direct attack
+ on the users’ privacy, so this is another part where security protocols
+ must be implemented.
+ Table <1> gives a comprehensive list of the smart home security issues
+ with respect to a smart grid.
+ It can be used as a basis for analyzing issues possible whenever we include
+ another system in our analysis.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="22" columns="4">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Scenario :
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Possible Threads
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Security Goals Compromised
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Degree of Impact
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SH1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eavesdropping (N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Confidentiality
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L-M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Traffic Analysis (N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integrity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Message Modification (N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Authenticity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Replay Attack (N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+EMS Impersonation (SH)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SH2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repudiation (N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Non repudiation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Message Modification( N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integrity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Replay Attack (N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Authentication
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SH3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tampering/Reversal/
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Authentication
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Removal of Meter (SH)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integrity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Illegal Software
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modification/Update(SH)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SH4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Customer Impersonation (N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integrity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{L}-\mathrm{H}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Device Impersonation (SH)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Non repudiation
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Message Modification(N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Authentication
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Replay attack(N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Repudiation(N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SH5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Customer Impersonation(N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Confidentiality
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+L-M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eavesdropping/Message(N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Integrity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Interception (N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Authenticity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Message Modification(N)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Smart Home Security Issues 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dgfig"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Security countermeasures
+\end_layout
+
+\begin_layout Subsubsection
+Confidentiality: 
+\end_layout
+
+\begin_layout Standard
+Cryptography is the most basic technique for achieving confidentiality.
+ There are two types of cryptographic algorithms, Symmetric and Asymmetric.
+ Symmetric algorithms (such as the standards AES and TDES) are expected
+ to be used for the purpose of data encryption within the Smart Grid.
+ Asymmetric algorithms on the other hand, (such as the approved RSA, DSA,
+ ECDSA etc.) are expected to be used for the purpose of digitally signing
+ messages.
+\end_layout
+
+\begin_layout Subsubsection
+Privacy:
+\end_layout
+
+\begin_layout Standard
+With the deployment of smart meters, it is clear that through the data collected
+ by the smart meter a lot could be known about the consumer, thus causing
+ fear.
+ Privacy can be achieved by the following ways: Anonymization: The data
+ and its source have their link removed before the data reaches its destination
+ for computation.
+ Trusted Aggregators: Trusted third party can handle aggregation of metering
+ data and its forwarding to the smart grid utility.
+ Homomorphic Encryption Perturbation Models : Introduction of noise of known
+ distribution Verifiable Computation Models Data Obfuscation Techniques:
+ : Battery-based approaches that aim to conceal the amount of energy consumed
+ by a premise by buffering or releasing their energy load.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Integrity:
+\end_layout
+
+\begin_layout Standard
+One way to ensure integrity is using the cryptographic hashing techniques,
+ which are designed for high integrity assurance in traditional networks.
+ When using such techniques the sending side uses a hash function to compute
+ the checksum of the message to be sent and attach it to the original message.
+ Upon receiving the message, the receiving side applies the same hash function
+ to the message and compares the resulting hash to the hash attached in
+ the original message.
+ Should the two hashes match, integrity is verified (i.e.
+ it is proven that the message contents have not been altered in transit
+ as a result of e.g.
+ a message modification attack).
+ Bhattarai et.al in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dg1"
+literal "false"
+
+\end_inset
+
+, present their own lightweight digital watermarking technique as a simple,
+ low-cost and efficient way to ensure defense against false data injection
+ attacks.
+ Digital watermarking is a technique of embedding digital data inside real
+ time meter readings, with the watermark carrying unique information about
+ the owner of the reading.
+ The purpose of the watermark is to validate the integrity of data.
+ Watermarked data are sent from the meter to the utility through high speed
+ unsecured networks that are prone to false data injection attacks.
+ To ensure the successful detection of these attacks , the meters use low
+ rate and secured channels to securely transmit the watermarks.
+ The utility thus receives both the watermarks and the watermarked data,
+ in order to correlate them and detect false data injection attacks Furthemore,
+ Load Profiling, Timestamps, Sequence Numbers, etc are other techniques
+ that can be used to ensure high integrity assurance.
+ Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:An-overview-of counter measures"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the various ways in which countermeasures .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/dg review of countermeasures.png
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An overview of security counter measures by goal.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:An-overview-of counter measures"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dgfig"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Smart Home Security Systems
+\end_layout
+
+\begin_layout Standard
+One major application of IOT in Homes is the power of monitoring the premises
+ from anywhere.
+ Smart security systems are highly customizable and available as do-it-yourself
+ kits or as full-blown setups that include professional installation and
+ monitoring.
+ Therefore, customers have a choice in systems where they can either monitor
+ the house themselves or can have it monitored by third parties on payment
+ basis.
+ There’s also options in which one can have individual devices (like motion
+ sensors, door locks, security cameras) rather than dedicated security systems
+ which can be monitored via smartphones or tablets.
+ As any general system would, the smart home security system can be connected
+ to the Wi-Fi router of the house, giving access to customers remotely.
+\end_layout
+
+\begin_layout Subsubsection*
+Ensuring Low Power Consumption : 
+\end_layout
+
+\begin_layout Standard
+In a perfect world, all home security components would use the same wireless
+ standard to communicate with the main hub, but factors such as power requiremen
+ts, signal range, price, and size make it virtually impossible to settle
+ on just one.
+ For example, smaller components such as door/window sensors typically use
+ Z-Wave or Zigbee technology because they don't require a lot of power and
+ can be powered by smaller batteries.
+ They also operate in a mesh topology and can help extend the range of networked
+ devices.
+ However, neither protocol provides the bandwidth that you get with Wi-Fi,
+ which is why it is usually used in security cameras to provide smooth video
+ streaming, and in other devices that require a fat pipe.
+ Moreover, Z-Wave and Zigbee devices are connected and controlled using
+ a hub, while Wi-Fi devices can be connected directly to your home network
+ and controlled with an app.
+ Finally, Z-Wave and Zigbee devices use AES 128 encryption, and since they
+ operate in a closed system with a dedicated hub, they offer more security
+ than Wi-Fi devices.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+A few Intelligent features : 
+\end_layout
+
+\begin_layout Standard
+With advancement in the intelligent IoT systems, more and more features
+ are coming up.
+ These features might be simple in nature but have a significant effect
+ on the lives of people.
+ For example, as soon as the smoke alarm goes off, all the doors should
+ be unlocked.
+ Or maybe the cameras could start recording as soon as a particular sensor
+ goes off.
+ Clearly, the first one will help in saving lives in case of fires and the
+ second will simply save up the memory usage, electricity usage, therefore,
+ giving monetary advantages to the customer.
+ All these with the advantage of easy modifications in the system using
+ smartphones, give the users a lavish security system at a minimal cost.
+ Another important feature to be noticed is the Video Doorbell which offers
+ an easy way to see who is at your door without having to open or even get
+ close to the door.
+ These devices connect to your Wi-Fi network and will send an alert when
+ someone approaches your doorway.
+ They'll record video when the doorbell is pressed or when motion is detected,
+ and usually offer two-way audio communication that allows you to speak
+ with the visitor from anywhere via your phone.
+ Another famous technology to be looked at here is, IFTTT.
+ IFTTT derives its name from the programming conditional statement “if this,
+ then that.” What the company provides is a software platform that connects
+ apps, devices and services from different developers in order to trigger
+ one or more automations involving those apps, devices and services.
+ This can allow the user to not necessarily go for a particular company
+ for all the components needed in the system.
+ The users as per their requirements can go for door locks, motion sensors,
+ smoke detector systems of different companies and use IFTTT to bring them
+ to a common platform.
+ This especially comes in handy to people trying to install the system on
+ their own.
+ So,many companies also give the IFTTT support 
 \end_layout
 
 \begin_layout Section
@@ -420,7 +1654,7 @@ Energy management solutions
 \begin_layout Standard
 Using energy efficiently in smart homes saves money, enhances sustainability
  and reduces carbon footprint at large.
- Consequently, the need for smart energy management is on the rise for smart
+ As a result, the need for smart energy management is on the rise for smart
  homes and for smart cities in general.
  However, the lack of low cost, easy to deploy, and low maintenance technology
  has somewhat limited a large-scale deployment of such systems.
@@ -761,6 +1995,98 @@ literal "false"
 \end_layout
 
 \begin_layout Subsection
+Smart Grid Architecture 
+\end_layout
+
+\begin_layout Standard
+Various frameworks describing the architecture of a Smart Grid have been
+ proposed, the most widely adopted and adapted model by far, being the reference
+ model proposed by the U.S National Institute of Standards and Technology.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nist"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here the authors describe the the Smart Grid as a set of seven interconnected
+ domains.
+ The first four domains (Bulk Generation, Transmission, Distribution and
+ Customers) are responsible for the generation, transmission and distribution
+ of energy but also for ensuring the two way communication between the customer
+ side and the Advanced Metering Infrastructure (AMI).
+ The rest three entities (Markets, Operations and Service Providers) are
+ inspired by NIST’s conceptual model .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/HEM-A-multi-layered-conceptual-model-of-the-Smart-Grids-architecture-Smart-Homes-at-the_W640.jpg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A multi-layered conceptual model of the Smart Grid’s architecture.
+ As described by NIST
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dgfig"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At the bottom layer of this model, one can find Home Area Networks (HANs),
+ Building Area Networks (BANs) and Industrial Area Networks (IANs) i.e.
+ wired or wireless networks in customer premises (homes, buildings or industrial
+ areas) that interconnect appliances with smart meters and energy management
+ devices, responsible for reporting the premise’s consumption to the grid
+ at any given time while also carrying messages from the grid back to the
+ premise.
+ Komninos et.
+ al 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dgfig"
+literal "false"
+
+\end_inset
+
+ breifly cover this Smart Grid Architecture in their paper.
+ 
+\end_layout
+
+\begin_layout Subsection
 Communication
 \end_layout
 
@@ -832,6 +2158,10 @@ literal "false"
 
 ].
  
+\end_layout
+
+\begin_layout Section
+Voice assistance
 \end_layout
 
 \begin_layout Section

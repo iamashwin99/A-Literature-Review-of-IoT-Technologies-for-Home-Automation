@@ -211,3 +211,31 @@
 	year = {2017}
 }
 
+@inproceedings{TheNN,
+	author = {Mozer, M.},
+	title = {The Neural Network House: An Environment that Adapts to its Inhabitants},
+	year = {1998}
+}
+
+@inproceedings{dg1,
+	author = {{Bhattarai}, S. and {Ge}, L. and {Yu}, W.},
+	booktitle = {2012 IEEE International Conference on Communications (ICC)},
+	doi = {10.1109/ICC.2012.6364511},
+	number = {},
+	pages = {907--911},
+	title = {A novel architecture against false data injection attacks in smart grid},
+	volume = {},
+	year = {2012}
+}
+
+@article{dgfig,
+	author = {{Komninos}, N. and {Philippou}, E. and {Pitsillides}, A.},
+	doi = {10.1109/COMST.2014.2320093},
+	journal = {IEEE Communications Surveys Tutorials},
+	number = {4},
+	pages = {1933--1954},
+	title = {Survey in Smart Grid and Smart Home Security: Issues, Challenges and Countermeasures},
+	volume = {16},
+	year = {2014}
+}
+
