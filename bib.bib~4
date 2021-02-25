@@ -211,3 +211,151 @@
 	year = {2017}
 }
 
+@inproceedings{TheNN,
+	author = {Mozer, M.},
+	title = {The Neural Network House: An Environment that Adapts to its Inhabitants},
+	year = {1998}
+}
+
+@inproceedings{dg1,
+	author = {{Bhattarai}, S. and {Ge}, L. and {Yu}, W.},
+	booktitle = {2012 IEEE International Conference on Communications (ICC)},
+	doi = {10.1109/ICC.2012.6364511},
+	number = {},
+	pages = {907--911},
+	title = {A novel architecture against false data injection attacks in smart grid},
+	volume = {},
+	year = {2012}
+}
+
+@article{dgfig,
+	author = {{Komninos}, N. and {Philippou}, E. and {Pitsillides}, A.},
+	doi = {10.1109/COMST.2014.2320093},
+	journal = {IEEE Communications Surveys Tutorials},
+	number = {4},
+	pages = {1933--1954},
+	title = {Survey in Smart Grid and Smart Home Security: Issues, Challenges and Countermeasures},
+	volume = {16},
+	year = {2014}
+}
+
+@manual{nist,
+	author = {{U.S. Department of Commerce}, {National Institute of Standards and Technology}},
+	title = {NIST Framework and Roadmap for Smart Grid Interoperability Standards, Release 1.0 [Online] Available : http://www.nist.gov/public\_affairs/releases/upload/smartgrid\_interoperabilit y\_final.pdf}
+}
+
+@article{m1,
+	abstract = {{New developments in assistive technology are likely to make an important contribution to the care of elderly people in institutions and at home. Video‐monitoring, remote health monitoring, electronic sensors and equipment such as fall detectors, door monitors, bed alerts, pressure mats and smoke and heat alarms can improve older people's safety, security and ability to cope at home. Care at home is often preferable to patients and is usually less expensive for care providers than institutional alternatives.}},
+	author = {Miskelly, Frank G.},
+	doi = {10.1093/ageing/30.6.455},
+	eprint = {https://academic.oup.com/ageing/article-pdf/30/6/455/86072/300455.pdf},
+	issn = {0002-0729},
+	journal = {Age and Ageing},
+	month = {11},
+	number = {6},
+	pages = {455--458},
+	title = {Assistive technology in elderly care},
+	url = {https://doi.org/10.1093/ageing/30.6.455},
+	volume = {30},
+	year = {2001}
+}
+
+@article{m2,
+	abstract = {Pervasive care and chronic disease management to reduce institutionalization is a priority for most western countries. The realization of next generation ubiquitous and pervasive healthcare systems will be a challenging task, as these systems are likely to involve a complex structure. Such systems will consist of various devices, ranging from resource-constrained sensors and actuators to complex multimedia devices, supporting time critical applications. This is further compounded by cultural and socio-economical factors that must be addressed for next generation healthcare systems to be widely diffused and used. In this study, the requirements for a vital sign monitoring solution space is derived and mPHASiS is developed based on these requirements. mPHASiS is an end to end solution not only providing sensor networking and vital sign monitoring but also closing the loop by signaling alert messages to the caregiver and allowing pervasive access to vital signs of a patient using smartphones over a heterogeneous network. A role based access control mechanism is developed to limit access to sensitive data. The end to end delay and delay variations for both vital sign data collection and pervasive access are analyzed. mPHASiS is developed as a complementary solution augmenting functionality of a hospital information system and can be loosely couple with the hospital information system using webservices.},
+	author = {Kulkarni, Prajakta and Ozturk, Yusuf},
+	doi = {10.1016/j.jnca.2010.03.030},
+	issn = {1084-8045},
+	journal = {Journal of Network and Computer Applications},
+	keywords = {Body sensor networks; Pervasive sensing; Remote health monitoring; Bio-sensors; Wireless sensor networks},
+	number = {1},
+	pages = {402--417},
+	title = {mPHASiS: Mobile patient healthcare and sensor information system},
+	url = {https://www.sciencedirect.com/science/article/pii/S1084804510000652},
+	volume = {34},
+	year = {2011}
+}
+
+@article{m3,
+	author = {Czarnuch, Stephen and Mihailidis, Alex},
+	doi = {10.4017/gt.2011.10.3.005.00},
+	journal = {Gerontechnology},
+	month = {12},
+	pages = {165--178},
+	title = {The design of intelligent in-home assistive technologies: Assessing the needs of older adults with dementia and their caregivers},
+	volume = {10},
+	year = {2011}
+}
+
+@inproceedings{m4,
+	author = {{Jiang}, Z. and {Lu}, L. and {Huang}, X. and {Tan}, C.},
+	booktitle = {2011 International Conference on Electrical and Control Engineering},
+	doi = {10.1109/ICECENG.2011.6057832},
+	number = {},
+	pages = {2995--2998},
+	title = {Design of wearable home health care system with emotion recognition function},
+	volume = {},
+	year = {2011}
+}
+
+@inproceedings{m5,
+	abstract = {The present paper proposes the application of decision trees to model activities of daily living in a multi-resident context. An extension of ID5R, called E-ID5R, is proposed. It augments the leaf nodes and allows such nodes to be multi-labeled. E-ID5R induces a decision tree incrementally to accommodate new instances and new activities as they become available over time. To evaluate the proposed algorithm, the ARAS dataset which is a real-world multi-resident dataset stemming from two houses is used. E-ID5R performs differently on activities of both houses.},
+	address = {Cham},
+	author = {Prossegger, Markus and Bouchachia, Abdelhamid},
+	booktitle = {Adaptive and Intelligent Systems},
+	editor = {Bouchachia, Abdelhamid},
+	isbn = {978-3-319-11298-5},
+	pages = {182--191},
+	publisher = {Springer International Publishing},
+	title = {Multi-resident Activity Recognition Using Incremental Decision Trees},
+	year = {2014}
+}
+
+@inproceedings{m6,
+	author = {{Isoda}, Y. and {Kurakake}, S. and {Nakano}, H.},
+	booktitle = {18th International Conference on Advanced Information Networking and Applications, 2004. AINA 2004.},
+	doi = {10.1109/AINA.2004.1283961},
+	number = {},
+	pages = {512--517 Vol.1},
+	title = {Ubiquitous sensors based human behavior modeling and recognition using a spatio-temporal representation of user states},
+	volume = {1},
+	year = {2004}
+}
+
+@inproceedings{m7,
+	author = {Ravi, Nishkam and Dandekar, Nikhil and Mysore, Preetham and Littman, Michael},
+	journal = {AAAI},
+	month = {01},
+	pages = {1541--1546},
+	title = {Activity Recognition from Accelerometer Data.},
+	volume = {3},
+	year = {2005}
+}
+
+@article{m8,
+	author = {Goguen, J. A.},
+	doi = {10.2307/2272014},
+	journal = {Journal of Symbolic Logic},
+	number = {4},
+	pages = {656--657},
+	publisher = {Cambridge University Press},
+	title = {L. A. Zadeh. Fuzzy sets. Information and control, vol. 8 (1965), pp. 338--353. - L. A. Zadeh. Similarity relations and fuzzy orderings. Information sciences, vol. 3 (1971), pp. 177--200.},
+	volume = {38},
+	year = {1973}
+}
+
+@article{m9,
+	abstract = {The persistence and evolution of systems essentially depend on their adaptivity to new situations. As an expression of intelligence, adaptivity is a distinguishing quality of any system that is able to learn and to adjust itself in a flexible manner to new environmental conditions and such ability ensures self-correction over time as new events happen, new input becomes available, or new operational conditions occur. This requires self-monitoring of the performance in an ever-changing environment. The relevance of adaptivity is established in numerous domains and by versatile real-world applications. The present paper presents an incremental fuzzy rule-based system for classification purposes. Relying on fuzzy min--max neural networks, the paper explains how fuzzy rules can be continuously online generated to meet the requirements of non-stationary dynamic environments, where data arrives over long periods of time. The approach proposed to deal with an ambient intelligence application. The simulation results show its effectiveness in dealing with dynamic situations and its performance when compared with existing approaches.},
+	author = {Bouchachia, Abdelhamid},
+	day = {01},
+	doi = {10.1007/s00500-010-0657-0},
+	issn = {1433-7479},
+	journal = {Soft Computing},
+	month = {May},
+	number = {5},
+	pages = {1009--1022},
+	title = {Fuzzy classification in dynamic environments},
+	url = {https://doi.org/10.1007/s00500-010-0657-0},
+	volume = {15},
+	year = {2011}
+}
+

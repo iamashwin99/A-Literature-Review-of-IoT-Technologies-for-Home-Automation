@@ -276,31 +276,885 @@ mention briefly about each domain and what we aim to explore
 \end_layout
 
 \begin_layout Section
-Healthcare Smart-Homes
+Healthcare oriented Intelligent Home Systems
+\end_layout
+
+\begin_layout Standard
+The technology of Smart Homes (SH), as an instance of ambient assisted living
+ technologies, is designed to assist the homes’ residents accomplishing
+ their daily-living activities and thus having a better quality of life
+ while preserving their privacy.
+ The smart home is equipped with a collection of software and hardware component
+s put together to monitor the living space, and infer/understand the behavior
+ of itsd rexisfents while preserving privacy.
+ 
+\end_layout
+
+\begin_layout Standard
+<IMG>
+\end_layout
+
+\begin_layout Standard
+Rise of aged population and the following need of supporting healthcare
+ systems that are dependable and affordable.
+ Elderly homes also face huge financial pressures ,being responsible for
+ providing formal care as well as healthcare services to the residents individua
+lly.
+ Statistically, the healthcare costs are almost similar between hospitals
+ and care-homes.
+\end_layout
+
+\begin_layout Standard
+Smart Homes technology is considered as a way to reduce living and care
+ costs and is also looked up to as a technological panacea for improving
+ the quality of living for people with care needs.
+ It has been applied for many purposes (Miskelly 2001) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m1"
+literal "false"
+
+\end_inset
+
+ like energy saving, security and safety, fall detection, light management,
+ smoke and fire detection etc.
+ using various solutions such as video monitoring, alarms, smart planners
+ and calendars, reminders, etc.
+ Equipped with sensors, actuators and eventually cameras to collect different
+ types of data about the home and the residents, Smart-Home can enable automatic
+ systems or caregivers to control the environment on behalf of the residents,
+ predict their actions and track their health condition.
+ 
+\end_layout
+
+\begin_layout Standard
+<IMG>
+\end_layout
+
+\begin_layout Standard
+Each layer of the system has its own function and comes with its own challenges
+ to be dealt with.
+ Data is collected as the physical layer by sensors, transmitted through
+ the communication layer to the processing unit in the processing layer
+ where it is analysed for activity recognition and behaviour patterns discovery.
+ The outcome of the analysis in the form of specific information, alerts
+ or warnings may be communicated through the interface layer to various
+ stakeholders (resident, caregivers, resident’s relatives).
 \end_layout
 
 \begin_layout Subsection
-Introduction of SH as layers: 
+Sensors and Networks
+\end_layout
+
+\begin_layout Standard
+These are the Hardware component of the entire Intelligent Home system,
+ and involve integration of sensors and associated actuators within a single
+ network that represents the home as a Virtual System over the Internet.
+ Many communication technologies and protocols to integrate the home devices
+ and sensors in the home are available such as Bluetooth, ZigBee and PLC.
+ Sensors provide data as either discrete or continuous data states/streams,
+ largely depending on the environmental factors and activity being monitored.
+ In particular sensors have commonly been seen to capture the following
+ data : 
+\end_layout
+
+\begin_layout Description
+– Strain and pressure 
+\end_layout
+
+\begin_layout Description
+– Position, direction, distance and motion 
+\end_layout
+
+\begin_layout Description
+– Light, radiation, temperature and humidity
+\end_layout
+
+\begin_layout Description
+– Type of material (e.g., solid, liquid and gas) 
+\end_layout
+
+\begin_layout Description
+– Sound – Image and video 
+\end_layout
+
+\begin_layout Description
+– State of the object (e.g., present, not present) 
+\end_layout
+
+\begin_layout Description
+– Physiological measurements (e.g., blood sugar, blood pressure)
+\end_layout
+
+\begin_layout Standard
+Through the deployment of sensors around the objects,home and environment,
+ the SH-systems infers: 
+\series bold
+Activities of the residents ; States of the objects ; States of the environment
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Types of Sensors: 
+\end_layout
+
+\begin_layout Description
+A) Discrete state
+\end_layout
+
+\begin_layout Standard
+Simple state sensors that can return a binary output of an event happening
+ such as opening and closing of doors, detecting motion in an area/room
+ and accordingly notifying the smart-home system.
+ 
+\end_layout
+
+\begin_layout Standard
+Commonly used sensors:
+\end_layout
+
+\begin_layout Itemize
+Passive-Infrared Sensors (PIR): Used to detect motion,can be used to identify
+ occupancy-status of rooms and is commonly part of security systems.
+ 
+\end_layout
+
+\begin_layout Itemize
+Contact-Switch Sensors: Typical use to find open/close state of doors like
+ cabinets,fridge.
+ Packaged with pressure sensors, can be used to detect occupancy such as
+ when a person sits on a chair in a room.
+ 
+\end_layout
+
+\begin_layout Itemize
+Radio Frequency Identification(RFID): Identify object-tags or people with
+ unique IDs and reading any associated data.
+ 
+\end_layout
+
+\begin_layout Standard
+The Intelligent system can attempt to infer what activities the resident
+ is performing, by inferring from a combination of these discrete parameters
+ and identify abnormal behaviour.
+ Such as cooking may be inferred by detecting occupants in the kitchen coupled
+ with opening and closing of the fridge door 
+\end_layout
+
+\begin_layout Standard
+<IMG>
+\end_layout
+
+\begin_layout Description
+B) Continuous State sensors: 
+\end_layout
+
+\begin_layout Standard
+Generated data is usually complex, such as data streams, images, sounds,
+ real-numbers etc.
+ 
+\end_layout
+
+\begin_layout Standard
+Types- 
+\end_layout
+
+\begin_layout Itemize
+Environmental: capture data such as light, humidity, pressure, noise etc.
+ 
+\end_layout
+
+\begin_layout Itemize
+Physiological : Part of wearable sensors that can create a Body-Area-Network
+ on the wearer.
+ Monitors health parameters such as blood glucose, blood pressure, ECG,
+ EEG, EMG, pulse etc.
+\end_layout
+
+\begin_layout Standard
+mPHASIS (Kulkarni and Ozturk 2011)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m2"
+literal "false"
+
+\end_inset
+
+ is an end-to-end healthcare Information-system that utilizes the BAN sensors
+ to measure health parameters.
+ The caregivers have access to the monitored data, are given alerts on patients
+ health and medicine-schedules.
+ 
+\end_layout
+
+\begin_layout Itemize
+Multimedia : Consist of mainly Video cameras , microphones etc.
+ Audiovisual recognition can be the most efficient way to monitor patients
+ activities like climbing and falling and confirm if medicines have been
+ administered correctly.
+\end_layout
+
+\begin_layout Standard
+Another system, called COACH,(Mihailidis et al.
+ (2008)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m3"
+literal "false"
+
+\end_inset
+
+) was proposed to assist the elderly with dementia through the process of
+ washing hands.
+ COACH uses video frames to discover the hand position relying on the partially
+ observable Markov decision processing model (POMDP).
+ The system features a multimedia guide and also alerts the caregivers when
+ the person is in a risky situation as identified by the system (e.g., when
+ the person is not moving, the sink is full) 
+\end_layout
+
+\begin_layout Standard
+<TABLE>
 \end_layout
 
 \begin_layout Subsection
-Sensing Technologies:
+Communication Network and Infrastructure 
+\end_layout
+
+\begin_layout Standard
+This forms the backbone of the hardware layer by connecting sensors and
+ gateways together to enable the flow of information through the Intelligent
+ Home.
+ It carries the monitored data from the installed sensors to the data sink(
+ coordinator) and forwards the control data to the actuators in the smart
+ home system.
+\end_layout
+
+\begin_layout Standard
+Network of sensors/actuator to data sink or coordinator 
+\end_layout
+
+\begin_layout Itemize
+LPW -Low Powered Wireless networks (e.g., z-wave,LoRa, zigbee, bluetooth,
+ RFID) 
+\end_layout
+
+\begin_layout Itemize
+PLC -Power line communication standards (e.g., X10) 
+\end_layout
+
+\begin_layout Itemize
+PAN -Personal computer networking protocols (e.g., WIFI) 
+\end_layout
+
+\begin_layout Itemize
+MTS or UMTS -Universal Mobile Telecommunications systems
+\end_layout
+
+\begin_layout Subsubsection
+Low Powered Wireless networks
+\end_layout
+
+\begin_layout Subsubsection
+Power line communication standards 
+\end_layout
+
+\begin_layout Subsubsection
+Personal computer networking protocols 
+\end_layout
+
+\begin_layout Subsubsection
+Mobile Telecommunications systems
+\end_layout
+
+\begin_layout Standard
+These networks are now widespread with the advent of smartphones and are
+ built to handle massive data-loads and a multitude of devices.
+ These networks support multimedia data transmission such as videos and
+ web-pages.
+ As these networks are extremely pervasive and necessary, they can be exploited
+ for a Smart-home network.
+\end_layout
+
+\begin_layout Standard
+A Mobile network device can serve as the intermediate node between the home-devi
+ces and supporting cloud services.
+ This topology would allow the telecommunication services such as SMS/MMS
+ to remotely interact with the Smart-Home as seen in the following implementatio
+ns Foo Siang Fook et al.
+ 2006; Trumler et al.
+ 2003; Zhaohui et al.
+ (2011)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m4"
+literal "false"
+
+\end_inset
+
+) 
 \end_layout
 
 \begin_layout Subsection
-Communication Layer 
+Data and Knowledge Engineering: 
 \end_layout
 
-\begin_layout Subsection
-Data processing, recognition
+\begin_layout Standard
+This is the part of an Intelligent Home System and any other Internet-of-Thing
+ enabled technology that gives them the power of cognition and intelligent
+ behaviour.
+ All Internet-of-Thing applications collect tonnes of data which is then
+ sent to servers/cloud for data processing and analysis.
+ Prior to analysis, the data undergoes Pre-Processing and Cleansing that
+ may be performed locally(Edge computing) or at the cloud.
+ After the data is prepared, analysis is done to classify,interpret activities
+ like- mining behavioral patterns, recognizing activities, detecting abnormal
+ behaviour etc.
+ After analysis, Intelligent home takes decisions and performs actions according
+ly such as sending alerts,booking appointments etc.
 \end_layout
 
-\begin_layout Subsection
-Human computer interaction
+\begin_layout Standard
+Aims of and focus areas of Intelligent algorithms in healthcare:
 \end_layout
 
-\begin_layout Subsection
-Overview of implementations
+\begin_layout Itemize
+Data Visualization : present data that tracks the resident’s health correlated
+ with their activities 
+\end_layout
+
+\begin_layout Itemize
+Analysis and Identifying potential health anomalies and accordingly notifying
+ the invested people 
+\end_layout
+
+\begin_layout Itemize
+Visualize progress of any disease such as monitoring tiredness Setting reminders
+ and prompt residents to complete medications, exercises, food 
+\end_layout
+
+\begin_layout Itemize
+Aid residents in performing tasks that may be difficult for them , such
+ as getting down the stairs, calling for help
+\end_layout
+
+\begin_layout Standard
+The common computational models used for activity recognition in SHs will
+ be highlighted and related studies will be summarized: 
+\end_layout
+
+\begin_layout Standard
+<TABLE>
+\end_layout
+
+\begin_layout Subsubsection
+Decision Tree
+\end_layout
+
+\begin_layout Standard
+This approach aims to model the relationships between the input data and
+ the resulting output.
+ Used for classification purposes with discrete outputs by use of class
+ labels.
+ The logic-structure consists of nodes that represent features and branches
+ that represent the values of the features.
+ The leaf nodes represent the class labels The resultant trees are used
+ to create Rules, that the Smart-Home system can use to classify the current-sta
+te of residents as safe or at potential risk by calculating the class labels.
+ Such a system is also known as Rule-Based-System(RBS).
+\end_layout
+
+\begin_layout Standard
+Trees can be built through an induction process by running algorithms on
+ a dataset.
+ Some known algorithms used are - TDIDT/ID3, C4.5, CART, MARS, and CHAID.
+ Trees can be generated by recursive algorithms that grow the tree and algorithm
+s that prune the tree dynamically.
+ Algorithms like C4.5 and CART employ both: growing and pruning of the tree.
+ It is important to note that the accuracy of any algorithm is not absolute,
+ but rather varies case-to-case basis.
+ 
+\end_layout
+
+\begin_layout Standard
+Example:
+\end_layout
+
+\begin_layout Enumerate
+In Prossegger and Bouchachia (2014)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m5"
+literal "false"
+
+\end_inset
+
+- the authors applied decision trees to model activities of daily living
+ in a multi-resident context.
+ An extension of ID5R, called EID5R, was proposed where the leaf nodes are
+ multi-labeled.
+ E-ID5R induces a decision tree incrementally to accommodate new instances
+ and new activities as they become available over time.
+ To evaluate the proposed algorithm, the ARAS dataset which is a real-world
+ multi resident dataset stemming from two houses was used.
+ E-ID5R performs differently on activities of both houses: for house A whose
+ data is quite challenging, the classification rate was modest (40 %), while
+ for house B the rate approached 82 %.
+\end_layout
+
+\begin_layout Enumerate
+C4.5 based implementations : 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Isoda et al.
+ (2004)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m6"
+literal "false"
+
+\end_inset
+
+ - aimed to classify the actions of residents as a function of their location
+ and information of the objects they touch.
+ The data was collected using RFID for sensing objects, while pressure sensors
+ were used to pinpoint the location of the residents.
+ In all, the classifier achieved a greater than 90% accuracy.
+ Ravi et al.
+ (2005)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m7"
+literal "false"
+
+\end_inset
+
+ - Focused on differentiating an individual’s movement activities such as
+ walking, moving over stairs, running, and even brushing their teeth.
+ The device employed were wearable sensors such as accelerometers.
+ It was observed that C4.5 achieved 97.29 % when trained and tested on data
+ from the same user over many days.
+ An accuracy of 98.53 % was achieved when C4.5 was trained and tested on data
+ stemming from many users and over many days and 77.95 % when trained and
+ tested on data not from the same day.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Fuzzy Logic 
+\end_layout
+
+\begin_layout Standard
+A fuzzy set as ‘‘a class of objects with a continuum grades of membership”.
+ Such a set is characterized by a member-mapping which assigns a value in
+ the continuous interval from 0 to 1, that denotes how closely related are
+ the objects.
+ Fuzzy sets and logic by Zadeh (1965)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m8"
+literal "false"
+
+\end_inset
+
+ was an expansion to the classical set theory.
+ In this manner, Fuzzy Logic is a method of reasoning that resembles human
+ linguistics and reasoning; as it considers all intermediate possibilities
+ between binary values of YES and NO.
+ The smart-home Rule-Based-Systems can then be expanded to work on Fuzzy
+ If-else paradigm, example; “Turn off AC when room is at a comfortable temperatu
+re” condition can be created that understands the comfortable temperature
+ ranges of each individual.
+ Here the input data first gets “Fuzzified” before being processed by an
+ RBS Inference-Block, and the output may need to be “Defuzzified” prior
+ to being translated into a Real-World action using .
+ The system generates confidence-levels while making decisions.
+ 
+\end_layout
+
+\begin_layout Standard
+<IMG>
+\end_layout
+
+\begin_layout Standard
+The figure maps temperature to a fuzzy set of qualitative ‘linguistic-expression
+s’ consisting of cold,warm and hot.
+ The arrows in the figure may be interpreted as intermediate states of slightly-
+warm , ‘not-hot’ etcetera.
+\end_layout
+
+\begin_layout Standard
+Fuzzy RBS to recognize different activities, have been made using classifiers
+ such as:
+\end_layout
+
+\begin_layout Enumerate
+In-depth view of common fuzzy classifiers was found in Bouchachia A (2011)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m9"
+literal "false"
+
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+iDome by Hagras et al.
+ (2004
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m10"
+literal "false"
+
+\end_inset
+
+) was a smart environment monitoring project that used fuzzy logic for implement
+ing a RBS controller.
+ The classifier rule outputs were function mappings based on the preferences
+ of the residents in a sensor equipped dormitory flat.
+ The dataset was generated over 2 months with 280 rules.
+\end_layout
+
+\begin_layout Enumerate
+IFS (Incremental Fuzzy-classification System) ,a dynamic classifier based
+ on Generalized fuzzy min-max neural networks (GFMMNN) was introduced by
+ Bouchachia A (2011)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m9"
+literal "false"
+
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Enumerate
+Class0, eClass1, k-NN, NB and HMM were implemented by Ordonez et al.
+ (2013)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m11"
+literal "false"
+
+\end_inset
+
+ which concluded that evolving classifiers performed better even with large
+ datasets.
+ 
+\end_layout
+
+\begin_layout Enumerate
+GT2FC stands for Growing Type-2 Fuzzy Classifier, which is an online self-learni
+ng and uses data streams was pioneered by Bouchachia and Vanaret (2014)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m12"
+literal "false"
+
+\end_inset
+
+.
+ It has been proposed for ambient-intelligent applications such as Smart-home
+ that learns and recognizes the activities of its residents.
+ The accuracy achieved was 81.6% and outperformed other classifiers on the
+ iDome dataset.
+\end_layout
+
+\begin_layout Subsubsection
+Artificial Neural
+\end_layout
+
+\begin_layout Standard
+Networks Neural networks consist of a network of connected nodes that each
+ can perform a few mathematical operations on some inputs-numbers.
+ The uniqueness of this network is that it is highly interconnected so as
+ to initiate the neurons connections in a human brain by cascading the inputs
+ and outputs of the nodes.
+ Every node or ‘artificial’ neuron assigns weights to the inputs that it
+ receives from the previous nodes.
+ The ANN consists of layers of such densely connected nodes and attempts
+ to ‘tweak’ the assigned weights to match final outputs with an expected
+ output which is known as ' learning’.
+ Multiple parameters such as connection-types and activation functions are
+ used to shape the layered-structure and connections of the ANN while applying
+ different ‘rules’ influence its learning behaviour.
+ 
+\end_layout
+
+\begin_layout Standard
+Connection types- Feed-Forward Networks, Recurrent-Neural Networks etc.
+ Learning Rules: Hebbian rule, Perceptron learning, Back-Propagation etc.
+ Activation functions : Sigmoidal, Hyperbolic-Tangent, etc.
+\end_layout
+
+\begin_layout Standard
+ANN can be used for activity classification, control of appliances, anomaly
+ detection as well as dependable activity prediction in a smart home environment.
+ In healthcare based smart home applications, ANN can be used for diagnose
+ and monitor chronic illness as well as building medical decision systems.
+ An example for these are found in (Khan et al.
+ 2001
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m13"
+literal "false"
+
+\end_inset
+
+; Lisboa and Taktak 2006
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m14"
+literal "false"
+
+\end_inset
+
+; Er et al.
+ (2010)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m15"
+literal "false"
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+Some well used combinations of these ANN-parameters give rise to the following
+ broad types: 
+\end_layout
+
+\begin_layout Itemize
+MLP : Multi-Layer Perceptron 
+\end_layout
+
+\begin_layout Itemize
+ESN : Echo State Networks 
+\end_layout
+
+\begin_layout Itemize
+RBFN : Radial Basis Function Networks
+\end_layout
+
+\begin_layout Standard
+A few use cases: 
+\end_layout
+
+\begin_layout Itemize
+(Mozar 1998
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TheNN"
+literal "false"
+
+\end_inset
+
+) ,used MLP neural Network to control Energy Consumption in accordance with
+ the lifestyle of the residents and relied upon the Back-Propagation learning
+ Algorithm 
+\end_layout
+
+\begin_layout Itemize
+MavHome project (Cook et al.
+ 2013b
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m17"
+literal "false"
+
+\end_inset
+
+), an MLP based framework was proposed to detect activity anomalies and
+ identify repetitive tasks performed by residents by inferring data from
+ environmental sensors and contact-switch-sensors.
+ 
+\end_layout
+
+\begin_layout Itemize
+An online learning system (Rivera-Illingworth et al.
+ (2005)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m18"
+literal "false"
+
+\end_inset
+
+) used a Recurrent-Neural-Network that recognised activities such as sleeping,ea
+ting, computer-usage and abnormal behaviour.
+ The Online-Mode of operation ,which was facilitated by the Evolving Connectioni
+st System (ECoS) framework, allows a deployed network to expand the number
+ of sensors and thus the scope of activity detection.
+\end_layout
+
+\begin_layout Itemize
+One-Pass Neural Network (OPNN) was employed by Li et al.
+ (2008)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m19"
+literal "false"
+
+\end_inset
+
+, for activity recognition that also ran online.
+ The control dataset was room completely set up with sensors, and the participan
+t residents were asked to list their activities to produce the Activities
+ of Daily Living(ADLs) for the dataset.
+ Detection of abnormal behaviours was done by creating an additional layer
+ of the network.
+\end_layout
+
+\begin_layout Subsubsection
+Naive Bayes Classification
+\end_layout
+
+\begin_layout Standard
+This classifier runs on simple probabilistic models based on Bayes’ theorem
+ to make decisions.
+ The classifier considers the inputs as independent variables and creates
+ a probability boundary to take decisions.
+ Due to being a probabilistic algorithm, NBC working is simple,traceable
+ and gives a higher degree of control to the designer.
+ NBC classifications have been employed in monitoring environments both
+ with and without visual sensing-data, and reached an accuracy of 89% in
+ 2 independent studies.
+ Tapia et al.
+ (2004)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m20"
+literal "false"
+
+\end_inset
+
+ -Visual data targeting Phone-use, Drinking water and Dining Messing et
+ al.
+ (2009)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m21"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Hidden Markov Models
+\end_layout
+
+\begin_layout Standard
+Hidden Markov models (HMMs) are the lego blocks of computational sequence
+ analysis.They are used for making probabilistic models of linear sequence
+ 'labeling' problems.They baseline is that we can build complex models just
+ by drawing an intuitive picture.We imagine an HMM generating a sequence.
+ For eg : Activities that can be linked together in a smart home Door Closed-AC
+ switched on - Fridge open- Water taken - Light closed -House lift opened.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Algorithm: 
+\end_layout
+
+\begin_layout Standard
+Visit a state - emit a residue from the state's probability distribution
+ .
+ Choose the next state to visit according to the state's transition probability
+ distribution.
+ Two strings of information are generated : underlying state path (the labels)
+ and observed sequence each residue being emitted from one state in the
+ state path.
+ Based on the observed sequence, we infer the hidden state path or hidden
+ Markov chain.
+ 
+\end_layout
+
+\begin_layout Standard
+<IMAGE>
+\end_layout
+
+\begin_layout Standard
+In smart homes,the model can learn behavior patterns of users and provide
+ services to residents automatically.
+ As a result, different values of daily temperature sections, motion sensory
+ activities and Wi-Fi based activity mapping are characterized as hidden
+ variables, which guide user activities.
+\end_layout
+
+\begin_layout Subsubsection
+Conditional Random field
+\end_layout
+
+\begin_layout Standard
+Conditional Random Fields are based on ‘Discriminative graphical Models’
+ in contrast to above mentioned generative classifiers (Hidden Markov) and
+ are used to find hidden states and transitions from the observed data sequences.
+ CRF primarily works on only Conditional Probability calculations rather
+ than Joint-Probability.
+ It is also flexible enough to accept arbitrary and dependent relations
+ between the sequences of observations.
+ Unlike HMM, CRF also discards the assumption of independent variables,
+ allowing it to capture virtually any relationships between an observation-varia
+ble and the hidden-states.
+ 
+\end_layout
+
+\begin_layout Standard
+Amongst the probabilistic models, CRF has been seen to achieve highest accuracy
+ in activity recognition.
+ CRF has outperformed HMM, NBC as well as the HSMM variant for multiple
+ activity datasets(ADLs) in two separate comparative studies namely in Kasabov
+ (2007)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m22"
+literal "false"
+
+\end_inset
+
+, van Kasteren et al.
+ (2010) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m22,m23"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Support Vector Machine Classification
+\end_layout
+
+\begin_layout Subsubsection
+Emerging patterns
+\end_layout
+
+\begin_layout Subsubsection
+Ontological modeling
+\end_layout
+
+\begin_layout Subsubsection
+Context aware reasoning 
 \end_layout
 
 \begin_layout Section
@@ -1560,8 +2414,8 @@ literal "false"
 
 \end_layout
 
-\begin_layout Subsection
-Smart Home Security Systems
+\begin_layout Section
+Security systems for smart homes
 \end_layout
 
 \begin_layout Standard
@@ -1580,7 +2434,7 @@ One major application of IOT in Homes is the power of monitoring the premises
  to the Wi-Fi router of the house, giving access to customers remotely.
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
 Ensuring Low Power Consumption : 
 \end_layout
 
@@ -1606,7 +2460,7 @@ ts, signal range, price, and size make it virtually impossible to settle
  
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
 A few Intelligent features : 
 \end_layout
 
@@ -1654,19 +2508,19 @@ Energy management solutions
 \begin_layout Standard
 Using energy efficiently in smart homes saves money, enhances sustainability
  and reduces carbon footprint at large.
- As a result, the need for smart energy management is on the rise for smart
- homes and for smart cities in general.
- However, the lack of low cost, easy to deploy, and low maintenance technology
- has somewhat limited a large-scale deployment of such systems.
- The sheer quantity of data collected throughout different cities of a country
+ As a result, the need for intelligent energy management is on the rise
+ for smart homes and smart cities in general.
+ The lack of low cost, low maintenance and easy to deploy technology has
+ limited a large-scale deployment of such systems.
+ The large amount of data collected throughout different cities of a country
  presents multiple challenges in data storage, organization, and analysis.
- Internet of Things (IoT) technology and Big Data are natural candidates
- to address these challenges.
+ Internet of Things (IoT) technology and Big Data are the most sought out
+ solutions to solve these challenges.
  IoT technologies can provide a ubiquitous computing platform to sense,
- monitor and control the household appliances energy consumption on a large
+ monitor and control household appliances energy consumption on a large
  scale.
- This data is collected using many different wireless sensors installed
- in residential units.
+ This data is collected with the help of many different wireless sensors
+ installed in residential power monitoring units.
  Similarly, Big Data technology can be utilized to collect and analyze large
  amounts of data 
 \begin_inset CommandInset citation
@@ -1677,22 +2531,20 @@ literal "false"
 \end_inset
 
 .
- Data analytics on this data using business intelligence (BI) platform plays
- an essential role in energy management decisions for homeowners and the
- utility alike.
+ Data analytics on this data using a business intelligence (BI) platform
+ plays an essential role in energy management decisions for homeowners and
+ the utility alike.
  The data can be monitored, collected and analyzed using predictive analysis
- and advanced methods to actionable information in the form of reports,
- graphs and charts.
- Thus, this analyzed data in real-time can aid home owners, utilities and
- utility eco-systems providers to gain significant insights on energy consumptio
-n of smart homes.
+ and advanced methods to actionable information in reports, graphs and charts.
+ Thus, this analyzed data in real-time can aid homeowners, utilities, and
+ utility eco-systems providers to gain significant insights into smart homes'
+ energy consumption.
  The energy service providers can use the power consumption data available
- with analytics engine to provide flexible and on-demand supply with appropriate
- energy marketing strategies.
- The consumers, being aware of their consumption behavior and having a close
- interaction with the electricity utilities, can adjust and optimize their
- power consumption and reduce their electricity bills.
- 
+ with an analytics engine to provide flexible and on-demand supply with
+ appropriate energy marketing strategies.
+ Being aware of their consumption behaviour and having a close interaction
+ with the electricity utilities can adjust and optimize home users power
+ consumption and reduce their electricity bills.
 \end_layout
 
 \begin_layout Subsection
@@ -1700,18 +2552,17 @@ Energy Harvesting and Management
 \end_layout
 
 \begin_layout Standard
-In order to have an effective cost saving system, it is important to monitor
+In order to have an effective cost-saving system, it is necessary to monitor
  and control the operation of residential loads depending on the aggregate
- power consumption over desired period, the peak power consumption, the
- effect of weather/atmospheric conditions and consumption slab rates.
+ power consumption over the desired period, the peak power consumption,
+ the effect of weather/atmospheric conditions and consumption slab rates.
  This is where the combination of IoT technology, Big Data analytics and
  BI comes into play for implementing energy management solutions on a local
  and national scale.
- Finally, as an additional advantage, the use of IoT also enables seamless
- remote access control of home devices where the customers get online access
- to the ON/OFF usage pattern of in home appliances via a personal computer
- or a mobile phone.
- 
+ Finally, as an additional advantage, IoT also enables seamless remote access
+ control of home devices where the customers get online access to the ON/OFF
+ usage pattern of in-home appliances via a personal computer or a mobile
+ phone.
 \end_layout
 
 \begin_layout Standard
@@ -1859,23 +2710,22 @@ literal "false"
 \end_inset
 
  proposes a distributed optimization algorithm for scheduling the energy
- consumption of multiple smart homes with distributed energy resources.
- In the proposed approach, the centralized optimization problem for home
- energy management is decomposed into a two-level optimization problem,
- corresponding to the local home energy management system (LHEMS) at the
- first level and the global home energy management system (GHEMS) at the
- second level.
- The controllable household appliances (e.g., air conditioner, washing machine)
- are scheduled in the LHEMS within consumer’s preferred appliance scheduling
- and comfort level while the energy storage system (ESS) and power trading
- between households are scheduled in the GHEMS.
- In the simulation study, the proposed distributed algorithm shows almost
+ consumption of multiple smart homes.
+ In the proposed approach, home energy management’s centralized optimization
+ problem is split into a two-level optimization problem, one corresponding
+ to the local home energy management system (LHEMS) and the global home
+ energy management system (GHEMS) at the second level.
+ Controllable household appliances (like an air conditioner, washing machine)
+ are listed in the LHEMS within users preferred appliance scheduling and
+ comfort level while the energy storage system (ESS) and power trading between
+ households are listed in the GHEMS.
+ In a simulation study, the proposed distributed algorithm shows almost
  equivalent performance to the centralized algorithm in terms of the electricity
  cost and the consumer’s comfort level.
- The impact of different network topologies on the proposed algorithm is
- also analyzed, and the result provides insight into the selection of the
- optimal network configuration in view of the consumer’s electricity cost
- saving.
+ The impact of different network topologies on the proposed algorithm was
+ also analyzed.
+ The result provides insight into the selection of the optimal network arrangeme
+nt to achieve electricity cost saving.
 \end_layout
 
 \begin_layout Standard
@@ -1999,10 +2849,10 @@ Smart Grid Architecture
 \end_layout
 
 \begin_layout Standard
-Various frameworks describing the architecture of a Smart Grid have been
- proposed, the most widely adopted and adapted model by far, being the reference
- model proposed by the U.S National Institute of Standards and Technology.
- 
+VVarious frameworks describing a Smart Grid architecture have been proposed
+ in the literature.
+ The most widely adopted and adapted model by far is the reference model
+ proposed by the U.S National Institute of Standards and Technology.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "nist"
@@ -2014,14 +2864,14 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Here the authors describe the the Smart Grid as a set of seven interconnected
+Here the authors describe the Smart Grid as a set of seven interconnected
  domains.
  The first four domains (Bulk Generation, Transmission, Distribution and
  Customers) are responsible for the generation, transmission and distribution
  of energy but also for ensuring the two way communication between the customer
  side and the Advanced Metering Infrastructure (AMI).
- The rest three entities (Markets, Operations and Service Providers) are
- inspired by NIST’s conceptual model .
+ NIST’s conceptual model inspires the rest three entities (Markets, Operations
+ and Service Providers).
 \end_layout
 
 \begin_layout Standard
@@ -2029,7 +2879,7 @@ Here the authors describe the the Smart Grid as a set of seven interconnected
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
