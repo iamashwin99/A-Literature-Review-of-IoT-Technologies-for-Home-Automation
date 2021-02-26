@@ -295,224 +295,1562 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-talk briefly about different IoT applications and in more detail about home
- automation in particular.
+With the advancement in technology, standards of the human living conditions
+ are also increasing.
+ The Internet of Things allows us to increase these standards at a minimum
+ cost, by providing an integrated mesh network of house appliances which
+ gives the inhabitants access to certain data in the house and the ability
+ to control some parameters remotely.
+ A categorization of articles we have come across on IoT applications on
+ intelligent smart homes is given in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:An-overview"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/overview.png
+	lyxscale 50
+	width 17cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An overview of all the articles we have seen on IoT applications in Intelligent
+ Smart Homes 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:An-overview"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this literature survey we have looked at some particular aspects of the
+ Intelligent Iot-driven Smart Homes and tried to cover them as extensively
+ as we could.
+ After a general discussion on smart-home architecture including the basic
+ components, cloud computing and voice assistants, we try to discuss how
+ Smart Homes can help caregivers.
+ Then we focus on energy management in a smart home network and using this
+ try to focus on ensuring security of the network.
+ Finally we look at how Cognitive IoT based networks are the next step in
+ Smart Homes.
+ 
 \end_layout
 
 \begin_layout Section
-Smart home systems
+Intelligent home architecture
 \end_layout
 
 \begin_layout Standard
-mention briefly about each domain and what we aim to explore
-\end_layout
-
-\begin_layout Section
-Typical intelligent home architecture
+Intelligent homes use connected home IoT devices to enhance the quality
+ of living for its users.
+ An intelligent home can even learn about residents to improve performance.
+ IoT systems range from simple designs like control of lights and appliances.
+ To this, the security of the house can be added.
+ Safety of the house to check for gas leaks, fire alarms etc., can also be
+ added.
+ Also, features to manage the energy budget can be added.
 \end_layout
 
 \begin_layout Standard
-The framework proposed in the building of smart homes incorporates the communica
-tion of various interconnected devices at home with the help of Internet
- of things.
- This framework includes the acceptance of the incoming requests by the
- server from connected devices and support exchange of information between
- them.
- Various components of a smart home would be looked at in this section.
- These devices collaborate and synchronize with each other through various
- Physical network, cloud servers and virtual networks.
- Further below the various smart home components would be looked upon:
+A smart home system takes care of 
 \end_layout
 
-\begin_layout Enumerate
-Server – A local database which monitors and coordinate the entire system
- centrally.
- All the devices are connected remotely to the server.
- If any server receives any request from a smart phone, it informs the source
- node and finally the message is forwarded to the destination node.
- Various rules of encryption are applied by the server to ensure the security
- of the system and to prevent the framework from unauthorized access.
+\begin_layout Itemize
+Home Automation and Ambience control
 \end_layout
 
-\begin_layout Enumerate
-Smart Phone – The smartphones are an important component of this IoT based
- framework because it helps the person to send requests to the server for
- its various services.
- Although, since the smart phone controls almost all the actions of this
- framework, it requires biometric authentication to control the functionality
- of the device.
- Also, every activity of the smartphone is also monitored by the centralized
- server.
- 
+\begin_layout Itemize
+Energy and Cost Management 
 \end_layout
 
-\begin_layout Enumerate
-Smart Thermostat – This component in the framework is used to control the
- temperature of the room.
- The outside weather updates are constantly given to the thermostat and
- on the basis of which it regulates the temperature of the room to the optimal
- level.
- Also, it’s console interface reacts to the presence of a person in the
- house.
- If it finds that no one is present in the house, all the interconnected
- devices automatically switches to the low power mode.
- 
+\begin_layout Itemize
+Health and monitoring
 \end_layout
 
-\begin_layout Enumerate
-Centralized AC- Moderating the room’s temperature and regulating the air
- outflow involving motion and infrared sensors is the main characteristic
- of the centralized AC.
- This centralized system always ensures that if no one is present in the
- house than ultimately those sensors would put the AC to off mode.
- Hence these devices are power efficient due to IoT enabled in them.
- 
+\begin_layout Itemize
+Safety and Security
 \end_layout
 
-\begin_layout Enumerate
-Connected Lights- All the lights inside a smart home are connected with
- a smartphone as well as with the centralized server.
- As soon as the smartphone sends any request to the centralized server,
- the server switches the lights as per the availability of person in the
- room.
- Also, the lighting is adjusted by the weather data as well.
- The weather outside adjusts the illumination factor in the house.
- 
-\end_layout
-
-\begin_layout Enumerate
-Windows and Ventilation Control – Smart Glass replaces the standard window.
- This smart glass contains thermochromic filters applied to outer portion
- of the double-sided glass window.
- Beyond any threshold temperature, these glass panes regulate the intensity
- of solar rays which comes inside the house and regulates the room temperature.
- 
-\end_layout
-
-\begin_layout Enumerate
-Smart TV- The new generation TV can be controlled using smart phones as
- well.
- These TV nowadays comes with internet support as well which helps in online
- streaming of videos and TV programs.
-\end_layout
-
-\begin_layout Enumerate
-Smart Refrigerator – This new boost in the IoT devices comes with magnificent
- features.
- It keeps the track of stored food items, and if there is any issue it sends
- the reminder to the person’s smartphone.
- These Smart fridges also comes with inbuilt camera which helps in the person
- to keep track of its food items through the smartphone.
- If any grocery item is finished, the server sends a message to the owner’s
- mobile.
+\begin_layout Standard
+Modern homes usually have several appliances such as TVs, refrigerators,
+ music systems, washers/dryers etc.
+ Managing and controlling these appliances is cumbersome as each appliance
+ has its control/remote control.
+ For e.g., smart washers/dryers can be controlled remotely and notify when
+ the process is complete.
+ Smart thermostats allow the controlling temperature of rooms and use several
+ learning algorithms to predict user preferences.
+ Smart refrigerators keep track of item is low on stock.
+ Smart TV’s allow users to search and stream videos and movies from the
+ Internet on a local storage drive.
+ Searching TV channel schedule to watch programs on demand.
+ Smart homes also have intruder alert systems that use cameras and PIR,
+ and other motion detection sensor.
+ In the case of intruders detected – the system alerts the user while also
+ alerting the local police station.
+ Smoke/gas detection systems can be used for protecting homes from fires
+ or gas leakage.
+ Smoke sensors, gas detectors (CO, LPG) leakage alerts the user through
+ SMS as well as alerts the local authorities.
 \end_layout
 
 \begin_layout Subsection
-IoT Platforms
+Home automation platforms
 \end_layout
 
 \begin_layout Standard
-The Internet of Things (IoT) platform is an integrator, a layer that allows
- multiple entities to be linked together.
- These can be physical devices or sensors, which emit interesting data and
- drivers to control conditions surrounding the world or some entity without
- a physical representation.
- In most cases, this is simply accomplished through some application codes.
- If the physical device cannot communicate directly to the Internet of Things
- platform, there is a need of another component immediately.
- This component is commonly known as a gateway.
- They can be either physical or based on application.
- It usually provides a point of integration for devices that use several
- wireless technologies such as Local Bluetooth, Zigbee or Z-Wave, but it
- can also act as an integration point for a third-party Low Power Wide Area
- Networks (LPWAN), such as Sigfox, or Narrow Internet of Things (NB-IoT).
- Moreover, the gateway good place to pre-process the sensor data.
- Also, looking at the point of view of applications, they usually process
- the data sent from the devices, command the actuators, and looking at all
- the circumstances they close the feedback Loop.
+Home automation softwares facilitate control of common home appliances,
+ from a UI which could be a webpage, a smartphone app, or a tablet installed
+ in the house.
+ They have a special significance because they provide a common interface
+ for the user to control multiple devices.
+ Depending on the advancement, some platforms can even allow users to do
+ very complex tasks by running customized scripts written by the user.
+ As these softwares bring different kinds of devices, they generally support
+ a variety of communication interfaces like Zigbee, Wi-Fi, BLE,XMPP, etc.
+ The access control is made easier, remote and effective.
+ 
 \end_layout
 
 \begin_layout Standard
-Management Layer is one of the most important layers in the IoT platform.
- It manages the registration of the entities of the platform as well as
- supervises all the devices, apps and gateways of the IoT platform.
- Also, restriction of unauthorized access is also provided by the ACL(Access
- Control List) mechanism .
- API’s are one of the most integral part of these IoT platforms.
- REST is one of the most frequently used API.
- Also some real time APIs such as XMPP, CoAP, MQTT are also actively used.
- Increasing number of APIs has lead to increase in effort to implement the
- whole platform.
- Security is the prime focus of every entity present in the IoT platform.
- Data transferred must be done through a very secured channel or at least
- must be encrypted to avoid its misuse.
- In the high level overview of IoT platform, gateways are the other source
- of connection between the devices if the devices are not connected directly.
+Now, there are two major categories of Home automation softwares that a
+ user gets.
+ First is the closed source, where the user would get most of the things
+ professionally set-up.
+ In these cases, one issue that could occur is the brand limited devices.
+ For example, Microsoft HomeOS works only on Windows, and not on Android
+ or iOS.
+ Similarly, if one chooses Samsung SmartThings, the devices that will be
+ connected to the smartphone app will all have to be Samsung, and the Voice
+ Assistant will be Bixby.
+ But this also becomes an advantage as the control is highly optimized over
+ the devices.
+ 
 \end_layout
 
 \begin_layout Standard
-MQTT Broker is the exchange point on which IoT platform of IBM Cloud is
- based on.
- Exchanging of messages between the clients is served by this central point
- known as MQTT broker.
- Here clients are the gateways, devices and applications.
- Two types of MQTT clients are found.
- Clients who represent device site, post events in moderated event MQTT
- Topic, and at the same time, they can subscribe to MQTT broker in order
- to receive orders.
- On the other hand, Customers who represent the Application Location, work
- in the opposite direction.
- Usually they share Topics of the event and its publication on leadership
- topics.
- The Internet of Things platform is the medium through which an application
- is made and executed.
- Hundreds of Sensors can be connected to an application and we can visualize
- a data being built.
- Since, the Internet of Things platform is just a layer of integration,
- Data persistence should be treated separately.
+The second category is open source.
+ Now, open source softwares are free to use, and they do not brand limit
+ the users.
+ Because of their generic nature, they might not always be optimized for
+ the appliances they control, but will always give a basic amount of control.
+ Major open source home automation platforms include openHAB, Home Assistant,
+ OpenMotics, Jeedom, ioBroker, AGO control, etc.
  
 \end_layout
 
 \begin_layout Subsection
-AWS-IoT
+Design of an intelligent smart home assistant
 \end_layout
 
 \begin_layout Standard
-AWS-IoT is a cloud service provider for various IoT devices to connect with
- other IoT devices or even with the AWS cloud services.
- It also helps to integrate the IoT devices with the help of the software
- into the AWS-IoT clouds.
- Devices can access the cloud services of AWS by connecting to the AWS IoT.
+An intelligent home assistant is a one which responds according to the owner’s
+ movement in the home.
+ As soon as the owner enters the house, all the sensors activates and it
+ results on the illumination of all the lights in the house.
+ Switching on of the AC, playing music on one say, automatic opening of
+ the door, heating the water for bathing, and many more things can be done
+ easily by the smart home assistant on the go.
+ All of the components in a house are linked to a centrally controlled system.
+ The owner of the smart home would have full access to the smart home on
+ his smartphone even he his outside his home.
+ To access one’s home remotely, many options such as Internet, Bluetooth,
+ GSM or wireless technology can be used.
+ The overall system design can be divided into four modules.
+\end_layout
+
+\begin_layout Standard
+Those are –
+\end_layout
+
+\begin_layout Enumerate
+Speech Recognition Module 
+\end_layout
+
+\begin_layout Enumerate
+Power Control Module
+\end_layout
+
+\begin_layout Enumerate
+Remote Control Module
+\end_layout
+
+\begin_layout Enumerate
+Core Control Module
+\end_layout
+
+\begin_layout Subsubsection
+Speech Recognition Module
+\end_layout
+
+\begin_layout Standard
+The voice input given by the operator is converted by the microphone from
+ speech signal to the electric signal.
+ This signal is further transferred to the speech recognition module which
+ converts the analog signal in digital form and then this signal is transferred
+ to the system.
+ Further, it’s upto the system to take the decisions with the help of the
+ relay-based power control module.
+\end_layout
+
+\begin_layout Standard
+Here the STT engine takes the recorded speech as an input and transforms
+ it into written texts.
+ Further, the TTS engine does exactly the opposite of it.
  
 \end_layout
 
 \begin_layout Standard
-Some of the protocols that AWS-IoT follows in the field of home automation
- are as follows: 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Div1Speech.jpeg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flow chart of Speech Recognition Module
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Power Control Module
 \end_layout
 
 \begin_layout Standard
-• MQTT (Message Queuing and Telemetry Transport)
+A relay-based module responsible for switching on and off any of the smart
+ home appliance device.
+ It requires the input from raspberry pi or any similar tool related to
+ it and based upon the input given by the tool, it switches on/off any of
+ the device.
 \end_layout
 
 \begin_layout Standard
-• MQTT over WSS (Websockets Secure) 
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Div2PowerMod.jpeg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flow chart of Power Control Module
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Remote Control Module
 \end_layout
 
 \begin_layout Standard
-• HTTPS (Hypertext Transfer Protocol - Secure).
+The raspberry or its alternative based system is helpful in storing the
+ current status of the devices into a file and ultimately save them into
+ a server in the cloud.
+ All these device statuses can be fetched from the android or Web applications
+ to display for the users.
+ If any of the status of the device is changed by the owner on the web or
+ on the android it automatically changes the status of the specific device
+ on the cloud server.
  
 \end_layout
 
 \begin_layout Standard
-• LoRaWAN (Long Range Wide Area Network).
- MQTT or MQTT over WSS clients are supported by the AWS IoT to publish the
- messages.
- Clients with HTTPS protocols are also helped by AWS-IoT.
- LoRaWAN of AWS-IoT connects and manages the LoRaWAN devices.
- If it were not been provided by the AWS, there would be a need of development
- of a LNS to connect and manage the wireless devices.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Div3Remotecontroll.jpeg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flow chart of Remote Control Module
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Overall system
+\end_layout
+
+\begin_layout Standard
+The combination of all the modules discussed above contributes to the making
+ of the overall system.
+ This overall system has the core modules included in it in the form of
+ various program-based applications.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Div4Overal system.jpeg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flow chart of Overall system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Security systems for Smart Homes
+\end_layout
+
+\begin_layout Standard
+One major application of IOT in Homes is the power of monitoring the premises
+ from anywhere.
+ Smart security systems are highly customizable and available as do-it-yourself
+ kits or as full-blown setups that include professional installation and
+ monitoring.
+ Therefore, customers have a choice in systems where they can either monitor
+ the house themselves or can have it monitored by third parties on payment
+ basis.
+ There’s also options in which one can have individual devices (like motion
+ sensors, door locks, security cameras) rather than dedicated security systems
+ which can be monitored via smartphones or tablets.
+ As any general system would, the smart home security system can be connected
+ to the Wi-Fi router of the house, giving access to customers remotely.
+\end_layout
+
+\begin_layout Subsubsection
+Ensuring Low Power Consumption : 
+\end_layout
+
+\begin_layout Standard
+In a perfect world, all home security components would use the same wireless
+ standard to communicate with the main hub, but factors such as power requiremen
+ts, signal range, price, and size make it virtually impossible to settle
+ on just one.
+ For example, smaller components such as door/window sensors typically use
+ Z-Wave or Zigbee technology because they don't require a lot of power and
+ can be powered by smaller batteries.
+ They also operate in a mesh topology and can help extend the range of networked
+ devices.
+ However, neither protocol provides the bandwidth that you get with Wi-Fi,
+ which is why it is usually used in security cameras to provide smooth video
+ streaming, and in other devices that require a fat pipe.
+ Moreover, Z-Wave and Zigbee devices are connected and controlled using
+ a hub, while Wi-Fi devices can be connected directly to your home network
+ and controlled with an app.
+ Finally, Z-Wave and Zigbee devices use AES 128 encryption, and since they
+ operate in a closed system with a dedicated hub, they offer more security
+ than Wi-Fi devices.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+A few Intelligent features : 
+\end_layout
+
+\begin_layout Standard
+With advancement in the intelligent IoT systems, more and more features
+ are coming up.
+ These features might be simple in nature but have a significant effect
+ on the lives of people.
+ For example, as soon as the smoke alarm goes off, all the doors should
+ be unlocked.
+ Or maybe the cameras could start recording as soon as a particular sensor
+ goes off.
+ Clearly, the first one will help in saving lives in case of fires and the
+ second will simply save up the memory usage, electricity usage, therefore,
+ giving monetary advantages to the customer.
+ All these with the advantage of easy modifications in the system using
+ smartphones, give the users a lavish security system at a minimal cost.
+ Another important feature to be noticed is the Video Doorbell which offers
+ an easy way to see who is at your door without having to open or even get
+ close to the door.
+ These devices connect to your Wi-Fi network and will send an alert when
+ someone approaches your doorway.
+ They'll record video when the doorbell is pressed or when motion is detected,
+ and usually offer two-way audio communication that allows you to speak
+ with the visitor from anywhere via your phone.
+ Another famous technology to be looked at here is, IFTTT.
+ IFTTT derives its name from the programming conditional statement “if this,
+ then that.” What the company provides is a software platform that connects
+ apps, devices and services from different developers in order to trigger
+ one or more automations involving those apps, devices and services.
+ This can allow the user to not necessarily go for a particular company
+ for all the components needed in the system.
+ The users as per their requirements can go for door locks, motion sensors,
+ smoke detector systems of different companies and use IFTTT to bring them
+ to a common platform.
+ This especially comes in handy to people trying to install the system on
+ their own.
+ So,many companies also give the IFTTT support 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="10">
+<features tabularvalignment="middle" tabularwidth="20cm">
+<column alignment="left" valignment="top" width="2.5cm">
+<column alignment="left" valignment="top" width="1cm">
+<column alignment="left" valignment="top" width="2cm">
+<column alignment="left" valignment="top" width="2cm">
+<column alignment="left" valignment="top" width="1.5cm">
+<column alignment="left" valignment="top" width="1.5cm">
+<column alignment="left" valignment="top" width="1.5cm">
+<column alignment="left" valignment="top" width="1.5cm">
+<column alignment="left" valignment="top" width="1.5cm">
+<column alignment="left" valignment="top" width="1.5cm">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Device Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Z-Wave / ZigBee
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Voice Assistant Compatibility
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Upfront Costs
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Professional Installation Required
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Power Outage Backup
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monthly Fees
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Monitoring Contract Required
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+IFTTT Support
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cellular Backup
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ADT Pulse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amazon Alexa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $49
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $28.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vivint Smart Home
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amazon Alexa, Google Assistant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $39.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SimpliSafe Home Security System
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amazon Alexa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $229
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $14.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ring Alarm Security Kit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amazon Alexa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $199
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Blue by ADT Home Security System
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amazon Alexa, Google Assistant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $149.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $19.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FrontPoint Safe Home
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amazon Alexa, Google Assistant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $44.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Honeywell Smart Home Security Starter Kit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amazon Alexa, Google Assistant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $449
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $4.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Wyze Sense Starter Kit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amazon Alexa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $19.99
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+None
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Abode iota All-In-One Security Kit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Amazon Alexa, Google Assistant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $299
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nest Secure
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Google Assistant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+$399 as tested
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Start at $19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+No
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yes
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+An comprehensive table of commercial smart home devices and their feature
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -526,7 +1864,7 @@ The technology of Smart Homes (SH), as an instance of ambient assisted living
  while preserving their privacy.
  The smart home is equipped with a collection of software and hardware component
 s put together to monitor the living space, and infer/understand the behavior
- of itsd rexisfents while preserving privacy.
+ of its residents while preserving privacy.
  
 \end_layout
 
@@ -535,7 +1873,7 @@ s put together to monitor the living space, and infer/understand the behavior
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3704,6 +5042,527 @@ Context aware reasoning
 \end_layout
 
 \begin_layout Section
+Energy management solutions
+\end_layout
+
+\begin_layout Standard
+Using energy efficiently in smart homes saves money, enhances sustainability
+ and reduces carbon footprint at large.
+ As a result, the need for intelligent energy management is on the rise
+ for smart homes and smart cities in general.
+ The lack of low cost, low maintenance and easy to deploy technology has
+ limited a large-scale deployment of such systems.
+ The large amount of data collected throughout different cities of a country
+ presents multiple challenges in data storage, organization, and analysis.
+ Internet of Things (IoT) technology and Big Data are the most sought out
+ solutions to solve these challenges.
+ IoT technologies can provide a ubiquitous computing platform to sense,
+ monitor and control household appliances energy consumption on a large
+ scale.
+ This data is collected with the help of many different wireless sensors
+ installed in residential power monitoring units.
+ Similarly, Big Data technology can be utilized to collect and analyze large
+ amounts of data 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "intro"
+literal "false"
+
+\end_inset
+
+.
+ Data analytics on this data using a business intelligence (BI) platform
+ plays an essential role in energy management decisions for homeowners and
+ the utility alike.
+ The data can be monitored, collected and analyzed using predictive analysis
+ and advanced methods to actionable information in reports, graphs and charts.
+ Thus, this analyzed data in real-time can aid homeowners, utilities, and
+ utility eco-systems providers to gain significant insights into smart homes'
+ energy consumption.
+ The energy service providers can use the power consumption data available
+ with an analytics engine to provide flexible and on-demand supply with
+ appropriate energy marketing strategies.
+ Being aware of their consumption behaviour and having a close interaction
+ with the electricity utilities can adjust and optimize home users power
+ consumption and reduce their electricity bills.
+\end_layout
+
+\begin_layout Subsection
+Energy Harvesting and Management
+\end_layout
+
+\begin_layout Standard
+In order to have an effective cost-saving system, it is necessary to monitor
+ and control the operation of residential loads depending on the aggregate
+ power consumption over the desired period, the peak power consumption,
+ the effect of weather/atmospheric conditions and consumption slab rates.
+ This is where the combination of IoT technology, Big Data analytics and
+ BI comes into play for implementing energy management solutions on a local
+ and national scale.
+ Finally, as an additional advantage, IoT also enables seamless remote access
+ control of home devices where the customers get online access to the ON/OFF
+ usage pattern of in-home appliances via a personal computer or a mobile
+ phone.
+\end_layout
+
+\begin_layout Standard
+Bharat et.
+ al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bharatetal"
+literal "false"
+
+\end_inset
+
+ focused on the advantages of home automation such as - reduced installation
+ cost, system stability, easy extension, aesthetically benefited and integration
+ of mobile devices.
+\end_layout
+
+\begin_layout Standard
+Farzana et.
+ al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "OptimumEnergyHarvesting"
+literal "false"
+
+\end_inset
+
+ in their research proposes an implementation of smart home automation system
+ by dividing our regular household appliances into two categories, low load
+ and some scheduled high load appliances.
+ After automation and scheduling, a solar system power supply has also been
+ incorporated that can supply power to some appliances and reduce power
+ consumption from national grid.
+ This system also provides a detail analysis on energy management which
+ has been developed by measuring power consumption throughout a year in
+ different seasons.
+ 
+\end_layout
+
+\begin_layout Standard
+Another interesting approach by for implementing energy efficient automation
+ is presented by Michael C.
+ Mozer in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TheNN"
+literal "false"
+
+\end_inset
+
+, where they have developed a home system that essentially programs itself
+ by observing the lifestyle and desires of the inhabitants, and learning
+ to anticipate and accommodate their needs.The system controls basic residential
+ comfort systems-air heating, lighting, ventilation, and water heating.
+ They call the system ACHE.
+ ACHE has two objectives.
+ 
+\end_layout
+
+\begin_layout Itemize
+One is anticipation of inhabitants needs.
+ Lighting, air temperature, and ventilation should be maintained to the
+ inhabitants comfort; hot water should be available on demand.
+ When inhabitants manually adjust environmental setpoints, it is an indication
+ that their needs have not been satisfied and will serve as a training signal
+ for ACHE.
+ If ACHE can learn to anticipate needs, manual control of the environment
+ will be avoided.
+ 
+\end_layout
+
+\begin_layout Itemize
+The second objective of ACHE is energy conservation.
+ Lights should be set to the minimum intensity required; hot water should
+ be maintained at the minimum temperature needed to satisfy the demand;
+ only rooms that are likely to be occupied in the near future should be
+ heated; when several options exist to heat a room , the alternative minimizing
+ expected energy consumption should be selected.
+\end_layout
+
+\begin_layout Standard
+They archive the optimal control by defining an average energy cost function
+ as 
+\begin_inset Formula 
+\[
+\ensuremath{J\left(t_{0}\right)=\mathrm{E}\left[\lim_{\kappa\rightarrow\infty}\frac{1}{\kappa}\sum_{t=t_{0}+1}^{t_{0}+\kappa}d\left(x_{t}\right)+e\left(u_{t}\right)\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ $J
+\backslash
+left(t_{0}
+\backslash
+right),$ is The expected average cost,  starting at time $t_{0}$ , $d
+\backslash
+left(x_{t}
+\backslash
+right)$ is the discomfort cost associated with the environmental state $x$
+ at time $t,$ and $e
+\backslash
+left(u_{t}
+\backslash
+right)$ is the energy cost associated with the control decision $u$ at time
+ $t$ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The goal is to find an optimal control policy (a mapping from 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ to decisions 
+\begin_inset Formula $u_{t}$
+\end_inset
+
+) that minimises the expected average cost.
+\end_layout
+
+\begin_layout Standard
+Il-Young Joo et.
+ al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MultipleSmartHomes"
+literal "false"
+
+\end_inset
+
+ proposes a distributed optimization algorithm for scheduling the energy
+ consumption of multiple smart homes.
+ In the proposed approach, home energy management’s centralized optimization
+ problem is split into a two-level optimization problem, one corresponding
+ to the local home energy management system (LHEMS) and the global home
+ energy management system (GHEMS) at the second level.
+ Controllable household appliances (like an air conditioner, washing machine)
+ are listed in the LHEMS within users preferred appliance scheduling and
+ comfort level while the energy storage system (ESS) and power trading between
+ households are listed in the GHEMS.
+ In a simulation study, the proposed distributed algorithm shows almost
+ equivalent performance to the centralized algorithm in terms of the electricity
+ cost and the consumer’s comfort level.
+ The impact of different network topologies on the proposed algorithm was
+ also analyzed.
+ The result provides insight into the selection of the optimal network arrangeme
+nt to achieve electricity cost saving.
+\end_layout
+
+\begin_layout Standard
+Junyon Kim et.
+ al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hems"
+literal "false"
+
+\end_inset
+
+ proposed a very simple and appropriate idea on smart home which includes
+ internal home appliances and their internal connectivity.
+ They called this model HEMS(Home Energy Management System) model using
+ Internet of Things (IoT).
+\end_layout
+
+\begin_layout Standard
+Zhao et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "schedulingsys"
+literal "false"
+
+\end_inset
+
+ in their paper propose a smarter model on scheduling system that can be
+ useful on our home automation system design assignment.
+\end_layout
+
+\begin_layout Standard
+Haque et al.
+ presented an optimized stand-alone green hybrid system to supply electricity
+ in an island of Bangladesh called Saint Martin
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SaintMartin"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+F Shabnam 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "engyharvesting"
+literal "false"
+
+\end_inset
+
+ talked about eco-friendly cellular network where base stations of cellular
+ network will harvest energy and trade the excess harvested energy to electricit
+y grids.
+\end_layout
+
+\begin_layout Standard
+Various studies have been steered in the application of IoT environment
+ for HVAC control and scheduling methods to optimize HVAC energy consumption
+ [
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int9"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int10"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int11"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\begin_layout Subsection
+Node energy management
+\end_layout
+
+\begin_layout Standard
+Apart from papers that talk about using IoT to optimise power consumption
+ and financial aspects of a house as a whole, techniques to minimise the
+ IoT device power are discussed in the following paper.
+\end_layout
+
+\begin_layout Standard
+The authors of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fuzzyapproach"
+literal "false"
+
+\end_inset
+
+ discuss a fuzzy logic based mechanism that determine the sleeping time
+ of an IoT devices in a home automation environment based on BLE.
+ The proposed FLC determines the sleeping time of field devices according
+ to the battery level and to the ratio of Throughput to Workload (Th/Wl).
+ Simulation results reveal that using the proposed approach the device lifetime
+ is increased by 30% with respect to the use of fixed sleeping time.
+\end_layout
+
+\begin_layout Subsection
+Smart Grid Architecture 
+\end_layout
+
+\begin_layout Standard
+Various frameworks describing a Smart Grid architecture have been proposed
+ in the literature.
+ The most widely adopted and adapted model by far is the reference model
+ proposed by the U.S National Institute of Standards and Technology.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nist"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here the authors describe the Smart Grid as a set of seven interconnected
+ domains.
+ The first four domains (Bulk Generation, Transmission, Distribution and
+ Customers) are responsible for the generation, transmission and distribution
+ of energy but also for ensuring the two way communication between the customer
+ side and the Advanced Metering Infrastructure (AMI).
+ NIST’s conceptual model inspires the rest three entities (Markets, Operations
+ and Service Providers).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/HEM-A-multi-layered-conceptual-model-of-the-Smart-Grids-architecture-Smart-Homes-at-the_W640.jpg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A multi-layered conceptual model of the Smart Grid’s architecture.
+ As described by NIST
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dgfig"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At the bottom layer of this model, one can find Home Area Networks (HANs),
+ Building Area Networks (BANs) and Industrial Area Networks (IANs) i.e.
+ wired or wireless networks in customer premises (homes, buildings or industrial
+ areas) that interconnect appliances with smart meters and energy management
+ devices, responsible for reporting the premise’s consumption to the grid
+ at any given time while also carrying messages from the grid back to the
+ premise.
+ Komninos et.
+ al 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dgfig"
+literal "false"
+
+\end_inset
+
+ breifly cover this Smart Grid Architecture in their paper.
+ 
+\end_layout
+
+\begin_layout Standard
+The Smart Grid gives the consumer the opportunity to become a producer of
+ energy as well as a consumer.
+ By installing distributed energy resources at his premises, a customer
+ can generate energy which he can sell to the grid at times when the demand
+ surpasses the supply.
+ Furthermore, by using his plug in electrical vehicle as a battery, a customer
+ not only can store but also import energy from the grid at urgent times.
+ Thus protecting it from damages caused by overloading.
+ 
+\end_layout
+
+\begin_layout Subsection
+Communication
+\end_layout
+
+\begin_layout Standard
+A HEMS requires a reliable communication network using WSN that can transport
+ the consumption details and consumer load behavior periodically.
+ In [
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int3"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int4"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int5"
+literal "false"
+
+\end_inset
+
+], an implementation of a HEMS Unit in a Wireless Sensor Network using a
+ ZigBee Module to communicate with sensor nodes, is presented.
+ The system monitors the device consumption data and sends control signals
+ to end nodes during peak load hours.
+ However, the lifetime of a WSN network deteriorates with time due to the
+ deployment of new sensors in the network.
+ Additionally, Han et al.
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int6"
+literal "false"
+
+\end_inset
+
+ introduced a system for monitoring power consumption using ZigBee as the
+ communication protocol in a WSN.
+ However, in this system the data was collected and aggregated solely by
+ the home server which could lead to data loss in case of a system failure.
+ Moreover, a bridge between ZigBee and TCP/IP stack would be required to
+ connect this system to a community of homes.
+ The above mentioned WSN networks have been extended to wider ranges in
+ the IoT paradigm utilizing the GSM/GPRS networks to remotely control the
+ end-devices in [
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int7"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int8"
+literal "false"
+
+\end_inset
+
+].
+ 
+\end_layout
+
+\begin_layout Section
 Security for IoT systems
 \end_layout
 
@@ -3947,7 +5806,7 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4969,1902 +6828,6 @@ literal "false"
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Security systems for Smart Homes
-\end_layout
-
-\begin_layout Standard
-One major application of IOT in Homes is the power of monitoring the premises
- from anywhere.
- Smart security systems are highly customizable and available as do-it-yourself
- kits or as full-blown setups that include professional installation and
- monitoring.
- Therefore, customers have a choice in systems where they can either monitor
- the house themselves or can have it monitored by third parties on payment
- basis.
- There’s also options in which one can have individual devices (like motion
- sensors, door locks, security cameras) rather than dedicated security systems
- which can be monitored via smartphones or tablets.
- As any general system would, the smart home security system can be connected
- to the Wi-Fi router of the house, giving access to customers remotely.
-\end_layout
-
-\begin_layout Subsection
-Ensuring Low Power Consumption : 
-\end_layout
-
-\begin_layout Standard
-In a perfect world, all home security components would use the same wireless
- standard to communicate with the main hub, but factors such as power requiremen
-ts, signal range, price, and size make it virtually impossible to settle
- on just one.
- For example, smaller components such as door/window sensors typically use
- Z-Wave or Zigbee technology because they don't require a lot of power and
- can be powered by smaller batteries.
- They also operate in a mesh topology and can help extend the range of networked
- devices.
- However, neither protocol provides the bandwidth that you get with Wi-Fi,
- which is why it is usually used in security cameras to provide smooth video
- streaming, and in other devices that require a fat pipe.
- Moreover, Z-Wave and Zigbee devices are connected and controlled using
- a hub, while Wi-Fi devices can be connected directly to your home network
- and controlled with an app.
- Finally, Z-Wave and Zigbee devices use AES 128 encryption, and since they
- operate in a closed system with a dedicated hub, they offer more security
- than Wi-Fi devices.
- 
-\end_layout
-
-\begin_layout Subsection
-A few Intelligent features : 
-\end_layout
-
-\begin_layout Standard
-With advancement in the intelligent IoT systems, more and more features
- are coming up.
- These features might be simple in nature but have a significant effect
- on the lives of people.
- For example, as soon as the smoke alarm goes off, all the doors should
- be unlocked.
- Or maybe the cameras could start recording as soon as a particular sensor
- goes off.
- Clearly, the first one will help in saving lives in case of fires and the
- second will simply save up the memory usage, electricity usage, therefore,
- giving monetary advantages to the customer.
- All these with the advantage of easy modifications in the system using
- smartphones, give the users a lavish security system at a minimal cost.
- Another important feature to be noticed is the Video Doorbell which offers
- an easy way to see who is at your door without having to open or even get
- close to the door.
- These devices connect to your Wi-Fi network and will send an alert when
- someone approaches your doorway.
- They'll record video when the doorbell is pressed or when motion is detected,
- and usually offer two-way audio communication that allows you to speak
- with the visitor from anywhere via your phone.
- Another famous technology to be looked at here is, IFTTT.
- IFTTT derives its name from the programming conditional statement “if this,
- then that.” What the company provides is a software platform that connects
- apps, devices and services from different developers in order to trigger
- one or more automations involving those apps, devices and services.
- This can allow the user to not necessarily go for a particular company
- for all the components needed in the system.
- The users as per their requirements can go for door locks, motion sensors,
- smoke detector systems of different companies and use IFTTT to bring them
- to a common platform.
- This especially comes in handy to people trying to install the system on
- their own.
- So,many companies also give the IFTTT support 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways true
-status open
-
-\begin_layout Plain Layout
-\noindent
-\begin_inset Tabular
-<lyxtabular version="3" rows="11" columns="10">
-<features tabularvalignment="middle" tabularwidth="20cm">
-<column alignment="left" valignment="top" width="2.5cm">
-<column alignment="left" valignment="top" width="1cm">
-<column alignment="left" valignment="top" width="2cm">
-<column alignment="left" valignment="top" width="2cm">
-<column alignment="left" valignment="top" width="1.5cm">
-<column alignment="left" valignment="top" width="1.5cm">
-<column alignment="left" valignment="top" width="1.5cm">
-<column alignment="left" valignment="top" width="1.5cm">
-<column alignment="left" valignment="top" width="1.5cm">
-<column alignment="left" valignment="top" width="1.5cm">
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Device Name
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Z-Wave / ZigBee
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Voice Assistant Compatibility
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Upfront Costs
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Professional Installation Required
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Power Outage Backup
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Monthly Fees
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Monitoring Contract Required
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-IFTTT Support
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Cellular Backup
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ADT Pulse
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Amazon Alexa
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $49
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $28.99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Vivint Smart Home
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Amazon Alexa, Google Assistant
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $39.99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-SimpliSafe Home Security System
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Amazon Alexa
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $229
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $14.99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Ring Alarm Security Kit
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Amazon Alexa
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $199
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $10
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Blue by ADT Home Security System
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Amazon Alexa, Google Assistant
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $149.99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $19.99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-FrontPoint Safe Home
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Amazon Alexa, Google Assistant
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $44.99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Honeywell Smart Home Security Starter Kit
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Amazon Alexa, Google Assistant
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $449
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $4.99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Wyze Sense Starter Kit
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Amazon Alexa
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $19.99
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-None
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Abode iota All-In-One Security Kit
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Amazon Alexa, Google Assistant
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $299
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $8
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Nest Secure
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Google Assistant
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-$399 as tested
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Start at $19
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-No
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Yes
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-An comprehensive table of commercial smart home devices and their feature
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Energy management solutions
-\end_layout
-
-\begin_layout Standard
-Using energy efficiently in smart homes saves money, enhances sustainability
- and reduces carbon footprint at large.
- As a result, the need for intelligent energy management is on the rise
- for smart homes and smart cities in general.
- The lack of low cost, low maintenance and easy to deploy technology has
- limited a large-scale deployment of such systems.
- The large amount of data collected throughout different cities of a country
- presents multiple challenges in data storage, organization, and analysis.
- Internet of Things (IoT) technology and Big Data are the most sought out
- solutions to solve these challenges.
- IoT technologies can provide a ubiquitous computing platform to sense,
- monitor and control household appliances energy consumption on a large
- scale.
- This data is collected with the help of many different wireless sensors
- installed in residential power monitoring units.
- Similarly, Big Data technology can be utilized to collect and analyze large
- amounts of data 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "intro"
-literal "false"
-
-\end_inset
-
-.
- Data analytics on this data using a business intelligence (BI) platform
- plays an essential role in energy management decisions for homeowners and
- the utility alike.
- The data can be monitored, collected and analyzed using predictive analysis
- and advanced methods to actionable information in reports, graphs and charts.
- Thus, this analyzed data in real-time can aid homeowners, utilities, and
- utility eco-systems providers to gain significant insights into smart homes'
- energy consumption.
- The energy service providers can use the power consumption data available
- with an analytics engine to provide flexible and on-demand supply with
- appropriate energy marketing strategies.
- Being aware of their consumption behaviour and having a close interaction
- with the electricity utilities can adjust and optimize home users power
- consumption and reduce their electricity bills.
-\end_layout
-
-\begin_layout Subsection
-Energy Harvesting and Management
-\end_layout
-
-\begin_layout Standard
-In order to have an effective cost-saving system, it is necessary to monitor
- and control the operation of residential loads depending on the aggregate
- power consumption over the desired period, the peak power consumption,
- the effect of weather/atmospheric conditions and consumption slab rates.
- This is where the combination of IoT technology, Big Data analytics and
- BI comes into play for implementing energy management solutions on a local
- and national scale.
- Finally, as an additional advantage, IoT also enables seamless remote access
- control of home devices where the customers get online access to the ON/OFF
- usage pattern of in-home appliances via a personal computer or a mobile
- phone.
-\end_layout
-
-\begin_layout Standard
-Bharat et.
- al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bharatetal"
-literal "false"
-
-\end_inset
-
- focused on the advantages of home automation such as - reduced installation
- cost, system stability, easy extension, aesthetically benefited and integration
- of mobile devices.
-\end_layout
-
-\begin_layout Standard
-Farzana et.
- al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "OptimumEnergyHarvesting"
-literal "false"
-
-\end_inset
-
- in their research proposes an implementation of smart home automation system
- by dividing our regular household appliances into two categories, low load
- and some scheduled high load appliances.
- After automation and scheduling, a solar system power supply has also been
- incorporated that can supply power to some appliances and reduce power
- consumption from national grid.
- This system also provides a detail analysis on energy management which
- has been developed by measuring power consumption throughout a year in
- different seasons.
- 
-\end_layout
-
-\begin_layout Standard
-Another interesting approach by for implementing energy efficient automation
- is presented by Michael C.
- Mozer in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "TheNN"
-literal "false"
-
-\end_inset
-
-, where they have developed a home system that essentially programs itself
- by observing the lifestyle and desires of the inhabitants, and learning
- to anticipate and accommodate their needs.The system controls basic residential
- comfort systems-air heating, lighting, ventilation, and water heating.
- They call the system ACHE.
- ACHE has two objectives.
- 
-\end_layout
-
-\begin_layout Itemize
-One is anticipation of inhabitants needs.
- Lighting, air temperature, and ventilation should be maintained to the
- inhabitants comfort; hot water should be available on demand.
- When inhabitants manually adjust environmental setpoints, it is an indication
- that their needs have not been satisfied and will serve as a training signal
- for ACHE.
- If ACHE can learn to anticipate needs, manual control of the environment
- will be avoided.
- 
-\end_layout
-
-\begin_layout Itemize
-The second objective of ACHE is energy conservation.
- Lights should be set to the minimum intensity required; hot water should
- be maintained at the minimum temperature needed to satisfy the demand;
- only rooms that are likely to be occupied in the near future should be
- heated; when several options exist to heat a room , the alternative minimizing
- expected energy consumption should be selected.
-\end_layout
-
-\begin_layout Standard
-They archive the optimal control by defining an average energy cost function
- as 
-\begin_inset Formula 
-\[
-\ensuremath{J\left(t_{0}\right)=\mathrm{E}\left[\lim_{\kappa\rightarrow\infty}\frac{1}{\kappa}\sum_{t=t_{0}+1}^{t_{0}+\kappa}d\left(x_{t}\right)+e\left(u_{t}\right)\right]}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Where 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
- $J
-\backslash
-left(t_{0}
-\backslash
-right),$ is The expected average cost,  starting at time $t_{0}$ , $d
-\backslash
-left(x_{t}
-\backslash
-right)$ is the discomfort cost associated with the environmental state $x$
- at time $t,$ and $e
-\backslash
-left(u_{t}
-\backslash
-right)$ is the energy cost associated with the control decision $u$ at time
- $t$ 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The goal is to find an optimal control policy (a mapping from 
-\begin_inset Formula $x_{t}$
-\end_inset
-
- to decisions 
-\begin_inset Formula $u_{t}$
-\end_inset
-
-) that minimises the expected average cost.
-\end_layout
-
-\begin_layout Standard
-Il-Young Joo et.
- al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "MultipleSmartHomes"
-literal "false"
-
-\end_inset
-
- proposes a distributed optimization algorithm for scheduling the energy
- consumption of multiple smart homes.
- In the proposed approach, home energy management’s centralized optimization
- problem is split into a two-level optimization problem, one corresponding
- to the local home energy management system (LHEMS) and the global home
- energy management system (GHEMS) at the second level.
- Controllable household appliances (like an air conditioner, washing machine)
- are listed in the LHEMS within users preferred appliance scheduling and
- comfort level while the energy storage system (ESS) and power trading between
- households are listed in the GHEMS.
- In a simulation study, the proposed distributed algorithm shows almost
- equivalent performance to the centralized algorithm in terms of the electricity
- cost and the consumer’s comfort level.
- The impact of different network topologies on the proposed algorithm was
- also analyzed.
- The result provides insight into the selection of the optimal network arrangeme
-nt to achieve electricity cost saving.
-\end_layout
-
-\begin_layout Standard
-Junyon Kim et.
- al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hems"
-literal "false"
-
-\end_inset
-
- proposed a very simple and appropriate idea on smart home which includes
- internal home appliances and their internal connectivity.
- They called this model HEMS(Home Energy Management System) model using
- Internet of Things (IoT).
-\end_layout
-
-\begin_layout Standard
-Zhao et al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "schedulingsys"
-literal "false"
-
-\end_inset
-
- in their paper propose a smarter model on scheduling system that can be
- useful on our home automation system design assignment.
-\end_layout
-
-\begin_layout Standard
-Haque et al.
- presented an optimized stand-alone green hybrid system to supply electricity
- in an island of Bangladesh called Saint Martin
-\begin_inset CommandInset citation
-LatexCommand cite
-key "SaintMartin"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-F Shabnam 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "engyharvesting"
-literal "false"
-
-\end_inset
-
- talked about eco-friendly cellular network where base stations of cellular
- network will harvest energy and trade the excess harvested energy to electricit
-y grids.
-\end_layout
-
-\begin_layout Standard
-Various studies have been steered in the application of IoT environment
- for HVAC control and scheduling methods to optimize HVAC energy consumption
- [
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int9"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int10"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int11"
-literal "false"
-
-\end_inset
-
-]
-\end_layout
-
-\begin_layout Subsection
-Node energy management
-\end_layout
-
-\begin_layout Standard
-Apart from papers that talk about using IoT to optimise power consumption
- and financial aspects of a house as a whole, techniques to minimise the
- IoT device power are discussed in the following paper.
-\end_layout
-
-\begin_layout Standard
-The authors of 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fuzzyapproach"
-literal "false"
-
-\end_inset
-
- discuss a fuzzy logic based mechanism that determine the sleeping time
- of an IoT devices in a home automation environment based on BLE.
- The proposed FLC determines the sleeping time of field devices according
- to the battery level and to the ratio of Throughput to Workload (Th/Wl).
- Simulation results reveal that using the proposed approach the device lifetime
- is increased by 30% with respect to the use of fixed sleeping time.
-\end_layout
-
-\begin_layout Subsection
-Smart Grid Architecture 
-\end_layout
-
-\begin_layout Standard
-Various frameworks describing a Smart Grid architecture have been proposed
- in the literature.
- The most widely adopted and adapted model by far is the reference model
- proposed by the U.S National Institute of Standards and Technology.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "nist"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Here the authors describe the Smart Grid as a set of seven interconnected
- domains.
- The first four domains (Bulk Generation, Transmission, Distribution and
- Customers) are responsible for the generation, transmission and distribution
- of energy but also for ensuring the two way communication between the customer
- side and the Advanced Metering Infrastructure (AMI).
- NIST’s conceptual model inspires the rest three entities (Markets, Operations
- and Service Providers).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/HEM-A-multi-layered-conceptual-model-of-the-Smart-Grids-architecture-Smart-Homes-at-the_W640.jpg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-A multi-layered conceptual model of the Smart Grid’s architecture.
- As described by NIST
-\begin_inset CommandInset citation
-LatexCommand cite
-key "dgfig"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-At the bottom layer of this model, one can find Home Area Networks (HANs),
- Building Area Networks (BANs) and Industrial Area Networks (IANs) i.e.
- wired or wireless networks in customer premises (homes, buildings or industrial
- areas) that interconnect appliances with smart meters and energy management
- devices, responsible for reporting the premise’s consumption to the grid
- at any given time while also carrying messages from the grid back to the
- premise.
- Komninos et.
- al 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "dgfig"
-literal "false"
-
-\end_inset
-
- breifly cover this Smart Grid Architecture in their paper.
- 
-\end_layout
-
-\begin_layout Standard
-The Smart Grid gives the consumer the opportunity to become a producer of
- energy as well as a consumer.
- By installing distributed energy resources at his premises, a customer
- can generate energy which he can sell to the grid at times when the demand
- surpasses the supply.
- Furthermore, by using his plug in electrical vehicle as a battery, a customer
- not only can store but also import energy from the grid at urgent times.
- Thus protecting it from damages caused by overloading.
- 
-\end_layout
-
-\begin_layout Subsection
-Communication
-\end_layout
-
-\begin_layout Standard
-A HEMS requires a reliable communication network using WSN that can transport
- the consumption details and consumer load behavior periodically.
- In [
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int3"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int4"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int5"
-literal "false"
-
-\end_inset
-
-], an implementation of a HEMS Unit in a Wireless Sensor Network using a
- ZigBee Module to communicate with sensor nodes, is presented.
- The system monitors the device consumption data and sends control signals
- to end nodes during peak load hours.
- However, the lifetime of a WSN network deteriorates with time due to the
- deployment of new sensors in the network.
- Additionally, Han et al.
- in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int6"
-literal "false"
-
-\end_inset
-
- introduced a system for monitoring power consumption using ZigBee as the
- communication protocol in a WSN.
- However, in this system the data was collected and aggregated solely by
- the home server which could lead to data loss in case of a system failure.
- Moreover, a bridge between ZigBee and TCP/IP stack would be required to
- connect this system to a community of homes.
- The above mentioned WSN networks have been extended to wider ranges in
- the IoT paradigm utilizing the GSM/GPRS networks to remotely control the
- end-devices in [
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int7"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int8"
-literal "false"
-
-\end_inset
-
-].
- 
-\end_layout
-
-\begin_layout Section
-Voice assistance
-\end_layout
-
-\begin_layout Subsection
-Design of an intelligent smart home assistant
-\end_layout
-
-\begin_layout Standard
-An intelligent home assistant is a one which responds according to the owner’s
- movement in the home.
- As soon as the owner enters the house, all the sensors activates and it
- results on the illumination of all the lights in the house.
- Switching on of the AC, playing music on one say, automatic opening of
- the door, heating the water for bathing, and many more things can be done
- easily by the smart home assistant on the go.
- All of the components in a house are linked to a centrally controlled system.
- The owner of the smart home would have full access to the smart home on
- his smartphone even he his outside his home.
- To access one’s home remotely, many options such as Internet, Bluetooth,
- GSM or wireless technology can be used.
- The overall system design can be divided into four modules.
-\end_layout
-
-\begin_layout Standard
-Those are –
-\end_layout
-
-\begin_layout Enumerate
-Speech Recognition Module 
-\end_layout
-
-\begin_layout Enumerate
-Power Control Module
-\end_layout
-
-\begin_layout Enumerate
-Remote Control Module
-\end_layout
-
-\begin_layout Enumerate
-Core Control Module
-\end_layout
-
-\begin_layout Subsubsection
-Speech Recognition Module
-\end_layout
-
-\begin_layout Standard
-The voice input given by the operator is converted by the microphone from
- speech signal to the electric signal.
- This signal is further transferred to the speech recognition module which
- converts the analog signal in digital form and then this signal is transferred
- to the system.
- Further, it’s upto the system to take the decisions with the help of the
- relay-based power control module.
-\end_layout
-
-\begin_layout Standard
-Here the STT engine takes the recorded speech as an input and transforms
- it into written texts.
- Further, the TTS engine does exactly the opposite of it.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/Div1Speech.jpeg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Flow chart of Speech Recognition Module
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Power Control Module
-\end_layout
-
-\begin_layout Standard
-A relay-based module responsible for switching on and off any of the smart
- home appliance device.
- It requires the input from raspberry pi or any similar tool related to
- it and based upon the input given by the tool, it switches on/off any of
- the device.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/Div2PowerMod.jpeg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Flow chart of Power Control Module
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Remote Control Module
-\end_layout
-
-\begin_layout Standard
-The raspberry or its alternative based system is helpful in storing the
- current status of the devices into a file and ultimately save them into
- a server in the cloud.
- All these device statuses can be fetched from the android or Web applications
- to display for the users.
- If any of the status of the device is changed by the owner on the web or
- on the android it automatically changes the status of the specific device
- on the cloud server.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/Div3Remotecontroll.jpeg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Flow chart of Remote Control Module
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Overall system
-\end_layout
-
-\begin_layout Standard
-The combination of all the modules discussed above contributes to the making
- of the overall system.
- This overall system has the core modules included in it in the form of
- various program-based applications.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/Div4Overal system.jpeg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Flow chart of Overall system
 \end_layout
 
 \end_inset
