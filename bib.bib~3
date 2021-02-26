@@ -488,3 +488,33 @@
 	year = {2009}
 }
 
+@book{m22,
+	doi = {10.1007/978-1-84628-347-5},
+	publisher = {Springer London},
+	title = {Evolving Connectionist Systems},
+	url = {https://doi.org/10.1007/978-1-84628-347-5},
+	year = {2007}
+}
+
+@article{mmain,
+	author = {Amiribesheli, Mohsen and Benmansour, Asma and Bouchachia, Abdelhamid},
+	doi = {10.1007/s12652-015-0270-2},
+	journal = {Journal of Ambient Intelligence and Humanized Computing},
+	month = mar,
+	number = {4},
+	pages = {495--517},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {A review of smart homes in healthcare},
+	url = {https://doi.org/10.1007/s12652-015-0270-2},
+	volume = {6},
+	year = {2015}
+}
+
+@inproceedings{m23,
+	author = {van Kasteren, Tim and Englebienne, Gwenn and Krose, B.},
+	month = {01},
+	pages = {283--300},
+	title = {Transferring Knowledge of Activity Recognition across Sensor Networks.},
+	year = {2010}
+}
+

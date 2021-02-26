@@ -496,3 +496,38 @@
 	year = {2007}
 }
 
+@article{mmain,
+	author = {Amiribesheli, Mohsen and Benmansour, Asma and Bouchachia, Abdelhamid},
+	doi = {10.1007/s12652-015-0270-2},
+	journal = {Journal of Ambient Intelligence and Humanized Computing},
+	month = mar,
+	number = {4},
+	pages = {495--517},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {A review of smart homes in healthcare},
+	url = {https://doi.org/10.1007/s12652-015-0270-2},
+	volume = {6},
+	year = {2015}
+}
+
+@inproceedings{m23,
+	author = {van Kasteren, Tim and Englebienne, Gwenn and Krose, B.},
+	month = {01},
+	pages = {283--300},
+	title = {Transferring Knowledge of Activity Recognition across Sensor Networks.},
+	year = {2010}
+}
+
+@article{mfig1,
+	author = {Park, Jin-ho and Salim, Mikail Mohammed and Jo, Jeong Hoon and Sicato, Jose Costa Sapalo and Rathore, Shailendra and Park, Jong Hyuk},
+	doi = {10.1186/s13673-019-0190-9},
+	journal = {Human-centric Computing and Information Sciences},
+	month = aug,
+	number = {1},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {{CIoT}-Net: a scalable cognitive {IoT} based smart city network architecture},
+	url = {https://doi.org/10.1186/s13673-019-0190-9},
+	volume = {9},
+	year = {2019}
+}
+

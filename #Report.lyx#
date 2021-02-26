@@ -515,235 +515,6 @@ Some of the protocols that AWS-IoT follows in the field of home automation
  
 \end_layout
 
-\begin_layout Subsection
-Design of an intelligent smart home assistant
-\end_layout
-
-\begin_layout Standard
-An intelligent home assistant is a one which responds according to the owner’s
- movement in the home.
- As soon as the owner enters the house, all the sensors activates and it
- results on the illumination of all the lights in the house.
- Switching on of the AC, playing music on one say, automatic opening of
- the door, heating the water for bathing, and many more things can be done
- easily by the smart home assistant on the go.
- All of the components in a house are linked to a centrally controlled system.
- The owner of the smart home would have full access to the smart home on
- his smartphone even he his outside his home.
- To access one’s home remotely, many options such as Internet, Bluetooth,
- GSM or wireless technology can be used.
- The overall system design can be divided into four modules.
-\end_layout
-
-\begin_layout Standard
-Those are –
-\end_layout
-
-\begin_layout Enumerate
-Speech Recognition Module 
-\end_layout
-
-\begin_layout Enumerate
-Power Control Module
-\end_layout
-
-\begin_layout Enumerate
-Remote Control Module
-\end_layout
-
-\begin_layout Enumerate
-Core Control Module
-\end_layout
-
-\begin_layout Subsubsection
-Speech Recognition Module
-\end_layout
-
-\begin_layout Standard
-The voice input given by the operator is converted by the microphone from
- speech signal to the electric signal.
- This signal is further transferred to the speech recognition module which
- converts the analog signal in digital form and then this signal is transferred
- to the system.
- Further, it’s upto the system to take the decisions with the help of the
- relay-based power control module.
-\end_layout
-
-\begin_layout Standard
-Here the STT engine takes the recorded speech as an input and transforms
- it into written texts.
- Further, the TTS engine does exactly the opposite of it.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/Div1Speech.jpeg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Flow chart of Speech Recognition Module
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Power Control Module
-\end_layout
-
-\begin_layout Standard
-A relay-based module responsible for switching on and off any of the smart
- home appliance device.
- It requires the input from raspberry pi or any similar tool related to
- it and based upon the input given by the tool, it switches on/off any of
- the device.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/Div2PowerMod.jpeg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Flow chart of Power Control Module
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Remote Control Module
-\end_layout
-
-\begin_layout Standard
-The raspberry or its alternative based system is helpful in storing the
- current status of the devices into a file and ultimately save them into
- a server in the cloud.
- All these device statuses can be fetched from the android or Web applications
- to display for the users.
- If any of the status of the device is changed by the owner on the web or
- on the android it automatically changes the status of the specific device
- on the cloud server.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/Div3Remotecontroll.jpeg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Flow chart of Remote Control Module
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Overall system
-\end_layout
-
-\begin_layout Standard
-The combination of all the modules discussed above contributes to the making
- of the overall system.
- This overall system has the core modules included in it in the form of
- various program-based applications.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/Div4Overal system.jpeg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Flow chart of Overall system
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Healthcare oriented Intelligent Home Systems
 \end_layout
@@ -755,7 +526,7 @@ The technology of Smart Homes (SH), as an instance of ambient assisted living
  while preserving their privacy.
  The smart home is equipped with a collection of software and hardware component
 s put together to monitor the living space, and infer/understand the behavior
- of its d rexisfents while preserving privacy.
+ of itsd rexisfents while preserving privacy.
  
 \end_layout
 
@@ -764,7 +535,7 @@ s put together to monitor the living space, and infer/understand the behavior
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3933,527 +3704,6 @@ Context aware reasoning
 \end_layout
 
 \begin_layout Section
-Energy management solutions
-\end_layout
-
-\begin_layout Standard
-Using energy efficiently in smart homes saves money, enhances sustainability
- and reduces carbon footprint at large.
- As a result, the need for intelligent energy management is on the rise
- for smart homes and smart cities in general.
- The lack of low cost, low maintenance and easy to deploy technology has
- limited a large-scale deployment of such systems.
- The large amount of data collected throughout different cities of a country
- presents multiple challenges in data storage, organization, and analysis.
- Internet of Things (IoT) technology and Big Data are the most sought out
- solutions to solve these challenges.
- IoT technologies can provide a ubiquitous computing platform to sense,
- monitor and control household appliances energy consumption on a large
- scale.
- This data is collected with the help of many different wireless sensors
- installed in residential power monitoring units.
- Similarly, Big Data technology can be utilized to collect and analyze large
- amounts of data 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "intro"
-literal "false"
-
-\end_inset
-
-.
- Data analytics on this data using a business intelligence (BI) platform
- plays an essential role in energy management decisions for homeowners and
- the utility alike.
- The data can be monitored, collected and analyzed using predictive analysis
- and advanced methods to actionable information in reports, graphs and charts.
- Thus, this analyzed data in real-time can aid homeowners, utilities, and
- utility eco-systems providers to gain significant insights into smart homes'
- energy consumption.
- The energy service providers can use the power consumption data available
- with an analytics engine to provide flexible and on-demand supply with
- appropriate energy marketing strategies.
- Being aware of their consumption behaviour and having a close interaction
- with the electricity utilities can adjust and optimize home users power
- consumption and reduce their electricity bills.
-\end_layout
-
-\begin_layout Subsection
-Energy Harvesting and Management
-\end_layout
-
-\begin_layout Standard
-In order to have an effective cost-saving system, it is necessary to monitor
- and control the operation of residential loads depending on the aggregate
- power consumption over the desired period, the peak power consumption,
- the effect of weather/atmospheric conditions and consumption slab rates.
- This is where the combination of IoT technology, Big Data analytics and
- BI comes into play for implementing energy management solutions on a local
- and national scale.
- Finally, as an additional advantage, IoT also enables seamless remote access
- control of home devices where the customers get online access to the ON/OFF
- usage pattern of in-home appliances via a personal computer or a mobile
- phone.
-\end_layout
-
-\begin_layout Standard
-Bharat et.
- al.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Bharatetal"
-literal "false"
-
-\end_inset
-
- focused on the advantages of home automation such as - reduced installation
- cost, system stability, easy extension, aesthetically benefited and integration
- of mobile devices.
-\end_layout
-
-\begin_layout Standard
-Farzana et.
- al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "OptimumEnergyHarvesting"
-literal "false"
-
-\end_inset
-
- in their research proposes an implementation of smart home automation system
- by dividing our regular household appliances into two categories, low load
- and some scheduled high load appliances.
- After automation and scheduling, a solar system power supply has also been
- incorporated that can supply power to some appliances and reduce power
- consumption from national grid.
- This system also provides a detail analysis on energy management which
- has been developed by measuring power consumption throughout a year in
- different seasons.
- 
-\end_layout
-
-\begin_layout Standard
-Another interesting approach by for implementing energy efficient automation
- is presented by Michael C.
- Mozer in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "TheNN"
-literal "false"
-
-\end_inset
-
-, where they have developed a home system that essentially programs itself
- by observing the lifestyle and desires of the inhabitants, and learning
- to anticipate and accommodate their needs.The system controls basic residential
- comfort systems-air heating, lighting, ventilation, and water heating.
- They call the system ACHE.
- ACHE has two objectives.
- 
-\end_layout
-
-\begin_layout Itemize
-One is anticipation of inhabitants needs.
- Lighting, air temperature, and ventilation should be maintained to the
- inhabitants comfort; hot water should be available on demand.
- When inhabitants manually adjust environmental setpoints, it is an indication
- that their needs have not been satisfied and will serve as a training signal
- for ACHE.
- If ACHE can learn to anticipate needs, manual control of the environment
- will be avoided.
- 
-\end_layout
-
-\begin_layout Itemize
-The second objective of ACHE is energy conservation.
- Lights should be set to the minimum intensity required; hot water should
- be maintained at the minimum temperature needed to satisfy the demand;
- only rooms that are likely to be occupied in the near future should be
- heated; when several options exist to heat a room , the alternative minimizing
- expected energy consumption should be selected.
-\end_layout
-
-\begin_layout Standard
-They archive the optimal control by defining an average energy cost function
- as 
-\begin_inset Formula 
-\[
-\ensuremath{J\left(t_{0}\right)=\mathrm{E}\left[\lim_{\kappa\rightarrow\infty}\frac{1}{\kappa}\sum_{t=t_{0}+1}^{t_{0}+\kappa}d\left(x_{t}\right)+e\left(u_{t}\right)\right]}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Where 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
- $J
-\backslash
-left(t_{0}
-\backslash
-right),$ is The expected average cost,  starting at time $t_{0}$ , $d
-\backslash
-left(x_{t}
-\backslash
-right)$ is the discomfort cost associated with the environmental state $x$
- at time $t,$ and $e
-\backslash
-left(u_{t}
-\backslash
-right)$ is the energy cost associated with the control decision $u$ at time
- $t$ 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The goal is to find an optimal control policy (a mapping from 
-\begin_inset Formula $x_{t}$
-\end_inset
-
- to decisions 
-\begin_inset Formula $u_{t}$
-\end_inset
-
-) that minimises the expected average cost.
-\end_layout
-
-\begin_layout Standard
-Il-Young Joo et.
- al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "MultipleSmartHomes"
-literal "false"
-
-\end_inset
-
- proposes a distributed optimization algorithm for scheduling the energy
- consumption of multiple smart homes.
- In the proposed approach, home energy management’s centralized optimization
- problem is split into a two-level optimization problem, one corresponding
- to the local home energy management system (LHEMS) and the global home
- energy management system (GHEMS) at the second level.
- Controllable household appliances (like an air conditioner, washing machine)
- are listed in the LHEMS within users preferred appliance scheduling and
- comfort level while the energy storage system (ESS) and power trading between
- households are listed in the GHEMS.
- In a simulation study, the proposed distributed algorithm shows almost
- equivalent performance to the centralized algorithm in terms of the electricity
- cost and the consumer’s comfort level.
- The impact of different network topologies on the proposed algorithm was
- also analyzed.
- The result provides insight into the selection of the optimal network arrangeme
-nt to achieve electricity cost saving.
-\end_layout
-
-\begin_layout Standard
-Junyon Kim et.
- al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "hems"
-literal "false"
-
-\end_inset
-
- proposed a very simple and appropriate idea on smart home which includes
- internal home appliances and their internal connectivity.
- They called this model HEMS(Home Energy Management System) model using
- Internet of Things (IoT).
-\end_layout
-
-\begin_layout Standard
-Zhao et al.
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "schedulingsys"
-literal "false"
-
-\end_inset
-
- in their paper propose a smarter model on scheduling system that can be
- useful on our home automation system design assignment.
-\end_layout
-
-\begin_layout Standard
-Haque et al.
- presented an optimized stand-alone green hybrid system to supply electricity
- in an island of Bangladesh called Saint Martin
-\begin_inset CommandInset citation
-LatexCommand cite
-key "SaintMartin"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-F Shabnam 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "engyharvesting"
-literal "false"
-
-\end_inset
-
- talked about eco-friendly cellular network where base stations of cellular
- network will harvest energy and trade the excess harvested energy to electricit
-y grids.
-\end_layout
-
-\begin_layout Standard
-Various studies have been steered in the application of IoT environment
- for HVAC control and scheduling methods to optimize HVAC energy consumption
- [
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int9"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int10"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int11"
-literal "false"
-
-\end_inset
-
-]
-\end_layout
-
-\begin_layout Subsection
-Node energy management
-\end_layout
-
-\begin_layout Standard
-Apart from papers that talk about using IoT to optimise power consumption
- and financial aspects of a house as a whole, techniques to minimise the
- IoT device power are discussed in the following paper.
-\end_layout
-
-\begin_layout Standard
-The authors of 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "fuzzyapproach"
-literal "false"
-
-\end_inset
-
- discuss a fuzzy logic based mechanism that determine the sleeping time
- of an IoT devices in a home automation environment based on BLE.
- The proposed FLC determines the sleeping time of field devices according
- to the battery level and to the ratio of Throughput to Workload (Th/Wl).
- Simulation results reveal that using the proposed approach the device lifetime
- is increased by 30% with respect to the use of fixed sleeping time.
-\end_layout
-
-\begin_layout Subsection
-Smart Grid Architecture 
-\end_layout
-
-\begin_layout Standard
-Various frameworks describing a Smart Grid architecture have been proposed
- in the literature.
- The most widely adopted and adapted model by far is the reference model
- proposed by the U.S National Institute of Standards and Technology.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "nist"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Here the authors describe the Smart Grid as a set of seven interconnected
- domains.
- The first four domains (Bulk Generation, Transmission, Distribution and
- Customers) are responsible for the generation, transmission and distribution
- of energy but also for ensuring the two way communication between the customer
- side and the Advanced Metering Infrastructure (AMI).
- NIST’s conceptual model inspires the rest three entities (Markets, Operations
- and Service Providers).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/HEM-A-multi-layered-conceptual-model-of-the-Smart-Grids-architecture-Smart-Homes-at-the_W640.jpg
-	width 8cm
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-A multi-layered conceptual model of the Smart Grid’s architecture.
- As described by NIST
-\begin_inset CommandInset citation
-LatexCommand cite
-key "dgfig"
-literal "false"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-At the bottom layer of this model, one can find Home Area Networks (HANs),
- Building Area Networks (BANs) and Industrial Area Networks (IANs) i.e.
- wired or wireless networks in customer premises (homes, buildings or industrial
- areas) that interconnect appliances with smart meters and energy management
- devices, responsible for reporting the premise’s consumption to the grid
- at any given time while also carrying messages from the grid back to the
- premise.
- Komninos et.
- al 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "dgfig"
-literal "false"
-
-\end_inset
-
- breifly cover this Smart Grid Architecture in their paper.
- 
-\end_layout
-
-\begin_layout Standard
-The Smart Grid gives the consumer the opportunity to become a producer of
- energy as well as a consumer.
- By installing distributed energy resources at his premises, a customer
- can generate energy which he can sell to the grid at times when the demand
- surpasses the supply.
- Furthermore, by using his plug in electrical vehicle as a battery, a customer
- not only can store but also import energy from the grid at urgent times.
- Thus protecting it from damages caused by overloading.
- 
-\end_layout
-
-\begin_layout Subsection
-Communication
-\end_layout
-
-\begin_layout Standard
-A HEMS requires a reliable communication network using WSN that can transport
- the consumption details and consumer load behavior periodically.
- In [
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int3"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int4"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int5"
-literal "false"
-
-\end_inset
-
-], an implementation of a HEMS Unit in a Wireless Sensor Network using a
- ZigBee Module to communicate with sensor nodes, is presented.
- The system monitors the device consumption data and sends control signals
- to end nodes during peak load hours.
- However, the lifetime of a WSN network deteriorates with time due to the
- deployment of new sensors in the network.
- Additionally, Han et al.
- in 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int6"
-literal "false"
-
-\end_inset
-
- introduced a system for monitoring power consumption using ZigBee as the
- communication protocol in a WSN.
- However, in this system the data was collected and aggregated solely by
- the home server which could lead to data loss in case of a system failure.
- Moreover, a bridge between ZigBee and TCP/IP stack would be required to
- connect this system to a community of homes.
- The above mentioned WSN networks have been extended to wider ranges in
- the IoT paradigm utilizing the GSM/GPRS networks to remotely control the
- end-devices in [
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int7"
-literal "false"
-
-\end_inset
-
-, 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "int8"
-literal "false"
-
-\end_inset
-
-].
- 
-\end_layout
-
-\begin_layout Section
 Security for IoT systems
 \end_layout
 
@@ -6861,6 +6111,760 @@ Yes
 
 \begin_layout Plain Layout
 An comprehensive table of commercial smart home devices and their feature
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Energy management solutions
+\end_layout
+
+\begin_layout Standard
+Using energy efficiently in smart homes saves money, enhances sustainability
+ and reduces carbon footprint at large.
+ As a result, the need for intelligent energy management is on the rise
+ for smart homes and smart cities in general.
+ The lack of low cost, low maintenance and easy to deploy technology has
+ limited a large-scale deployment of such systems.
+ The large amount of data collected throughout different cities of a country
+ presents multiple challenges in data storage, organization, and analysis.
+ Internet of Things (IoT) technology and Big Data are the most sought out
+ solutions to solve these challenges.
+ IoT technologies can provide a ubiquitous computing platform to sense,
+ monitor and control household appliances energy consumption on a large
+ scale.
+ This data is collected with the help of many different wireless sensors
+ installed in residential power monitoring units.
+ Similarly, Big Data technology can be utilized to collect and analyze large
+ amounts of data 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "intro"
+literal "false"
+
+\end_inset
+
+.
+ Data analytics on this data using a business intelligence (BI) platform
+ plays an essential role in energy management decisions for homeowners and
+ the utility alike.
+ The data can be monitored, collected and analyzed using predictive analysis
+ and advanced methods to actionable information in reports, graphs and charts.
+ Thus, this analyzed data in real-time can aid homeowners, utilities, and
+ utility eco-systems providers to gain significant insights into smart homes'
+ energy consumption.
+ The energy service providers can use the power consumption data available
+ with an analytics engine to provide flexible and on-demand supply with
+ appropriate energy marketing strategies.
+ Being aware of their consumption behaviour and having a close interaction
+ with the electricity utilities can adjust and optimize home users power
+ consumption and reduce their electricity bills.
+\end_layout
+
+\begin_layout Subsection
+Energy Harvesting and Management
+\end_layout
+
+\begin_layout Standard
+In order to have an effective cost-saving system, it is necessary to monitor
+ and control the operation of residential loads depending on the aggregate
+ power consumption over the desired period, the peak power consumption,
+ the effect of weather/atmospheric conditions and consumption slab rates.
+ This is where the combination of IoT technology, Big Data analytics and
+ BI comes into play for implementing energy management solutions on a local
+ and national scale.
+ Finally, as an additional advantage, IoT also enables seamless remote access
+ control of home devices where the customers get online access to the ON/OFF
+ usage pattern of in-home appliances via a personal computer or a mobile
+ phone.
+\end_layout
+
+\begin_layout Standard
+Bharat et.
+ al.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bharatetal"
+literal "false"
+
+\end_inset
+
+ focused on the advantages of home automation such as - reduced installation
+ cost, system stability, easy extension, aesthetically benefited and integration
+ of mobile devices.
+\end_layout
+
+\begin_layout Standard
+Farzana et.
+ al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "OptimumEnergyHarvesting"
+literal "false"
+
+\end_inset
+
+ in their research proposes an implementation of smart home automation system
+ by dividing our regular household appliances into two categories, low load
+ and some scheduled high load appliances.
+ After automation and scheduling, a solar system power supply has also been
+ incorporated that can supply power to some appliances and reduce power
+ consumption from national grid.
+ This system also provides a detail analysis on energy management which
+ has been developed by measuring power consumption throughout a year in
+ different seasons.
+ 
+\end_layout
+
+\begin_layout Standard
+Another interesting approach by for implementing energy efficient automation
+ is presented by Michael C.
+ Mozer in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "TheNN"
+literal "false"
+
+\end_inset
+
+, where they have developed a home system that essentially programs itself
+ by observing the lifestyle and desires of the inhabitants, and learning
+ to anticipate and accommodate their needs.The system controls basic residential
+ comfort systems-air heating, lighting, ventilation, and water heating.
+ They call the system ACHE.
+ ACHE has two objectives.
+ 
+\end_layout
+
+\begin_layout Itemize
+One is anticipation of inhabitants needs.
+ Lighting, air temperature, and ventilation should be maintained to the
+ inhabitants comfort; hot water should be available on demand.
+ When inhabitants manually adjust environmental setpoints, it is an indication
+ that their needs have not been satisfied and will serve as a training signal
+ for ACHE.
+ If ACHE can learn to anticipate needs, manual control of the environment
+ will be avoided.
+ 
+\end_layout
+
+\begin_layout Itemize
+The second objective of ACHE is energy conservation.
+ Lights should be set to the minimum intensity required; hot water should
+ be maintained at the minimum temperature needed to satisfy the demand;
+ only rooms that are likely to be occupied in the near future should be
+ heated; when several options exist to heat a room , the alternative minimizing
+ expected energy consumption should be selected.
+\end_layout
+
+\begin_layout Standard
+They archive the optimal control by defining an average energy cost function
+ as 
+\begin_inset Formula 
+\[
+\ensuremath{J\left(t_{0}\right)=\mathrm{E}\left[\lim_{\kappa\rightarrow\infty}\frac{1}{\kappa}\sum_{t=t_{0}+1}^{t_{0}+\kappa}d\left(x_{t}\right)+e\left(u_{t}\right)\right]}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+ $J
+\backslash
+left(t_{0}
+\backslash
+right),$ is The expected average cost,  starting at time $t_{0}$ , $d
+\backslash
+left(x_{t}
+\backslash
+right)$ is the discomfort cost associated with the environmental state $x$
+ at time $t,$ and $e
+\backslash
+left(u_{t}
+\backslash
+right)$ is the energy cost associated with the control decision $u$ at time
+ $t$ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The goal is to find an optimal control policy (a mapping from 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ to decisions 
+\begin_inset Formula $u_{t}$
+\end_inset
+
+) that minimises the expected average cost.
+\end_layout
+
+\begin_layout Standard
+Il-Young Joo et.
+ al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MultipleSmartHomes"
+literal "false"
+
+\end_inset
+
+ proposes a distributed optimization algorithm for scheduling the energy
+ consumption of multiple smart homes.
+ In the proposed approach, home energy management’s centralized optimization
+ problem is split into a two-level optimization problem, one corresponding
+ to the local home energy management system (LHEMS) and the global home
+ energy management system (GHEMS) at the second level.
+ Controllable household appliances (like an air conditioner, washing machine)
+ are listed in the LHEMS within users preferred appliance scheduling and
+ comfort level while the energy storage system (ESS) and power trading between
+ households are listed in the GHEMS.
+ In a simulation study, the proposed distributed algorithm shows almost
+ equivalent performance to the centralized algorithm in terms of the electricity
+ cost and the consumer’s comfort level.
+ The impact of different network topologies on the proposed algorithm was
+ also analyzed.
+ The result provides insight into the selection of the optimal network arrangeme
+nt to achieve electricity cost saving.
+\end_layout
+
+\begin_layout Standard
+Junyon Kim et.
+ al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hems"
+literal "false"
+
+\end_inset
+
+ proposed a very simple and appropriate idea on smart home which includes
+ internal home appliances and their internal connectivity.
+ They called this model HEMS(Home Energy Management System) model using
+ Internet of Things (IoT).
+\end_layout
+
+\begin_layout Standard
+Zhao et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "schedulingsys"
+literal "false"
+
+\end_inset
+
+ in their paper propose a smarter model on scheduling system that can be
+ useful on our home automation system design assignment.
+\end_layout
+
+\begin_layout Standard
+Haque et al.
+ presented an optimized stand-alone green hybrid system to supply electricity
+ in an island of Bangladesh called Saint Martin
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SaintMartin"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+F Shabnam 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "engyharvesting"
+literal "false"
+
+\end_inset
+
+ talked about eco-friendly cellular network where base stations of cellular
+ network will harvest energy and trade the excess harvested energy to electricit
+y grids.
+\end_layout
+
+\begin_layout Standard
+Various studies have been steered in the application of IoT environment
+ for HVAC control and scheduling methods to optimize HVAC energy consumption
+ [
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int9"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int10"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int11"
+literal "false"
+
+\end_inset
+
+]
+\end_layout
+
+\begin_layout Subsection
+Node energy management
+\end_layout
+
+\begin_layout Standard
+Apart from papers that talk about using IoT to optimise power consumption
+ and financial aspects of a house as a whole, techniques to minimise the
+ IoT device power are discussed in the following paper.
+\end_layout
+
+\begin_layout Standard
+The authors of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "fuzzyapproach"
+literal "false"
+
+\end_inset
+
+ discuss a fuzzy logic based mechanism that determine the sleeping time
+ of an IoT devices in a home automation environment based on BLE.
+ The proposed FLC determines the sleeping time of field devices according
+ to the battery level and to the ratio of Throughput to Workload (Th/Wl).
+ Simulation results reveal that using the proposed approach the device lifetime
+ is increased by 30% with respect to the use of fixed sleeping time.
+\end_layout
+
+\begin_layout Subsection
+Smart Grid Architecture 
+\end_layout
+
+\begin_layout Standard
+Various frameworks describing a Smart Grid architecture have been proposed
+ in the literature.
+ The most widely adopted and adapted model by far is the reference model
+ proposed by the U.S National Institute of Standards and Technology.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "nist"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here the authors describe the Smart Grid as a set of seven interconnected
+ domains.
+ The first four domains (Bulk Generation, Transmission, Distribution and
+ Customers) are responsible for the generation, transmission and distribution
+ of energy but also for ensuring the two way communication between the customer
+ side and the Advanced Metering Infrastructure (AMI).
+ NIST’s conceptual model inspires the rest three entities (Markets, Operations
+ and Service Providers).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/HEM-A-multi-layered-conceptual-model-of-the-Smart-Grids-architecture-Smart-Homes-at-the_W640.jpg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A multi-layered conceptual model of the Smart Grid’s architecture.
+ As described by NIST
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dgfig"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At the bottom layer of this model, one can find Home Area Networks (HANs),
+ Building Area Networks (BANs) and Industrial Area Networks (IANs) i.e.
+ wired or wireless networks in customer premises (homes, buildings or industrial
+ areas) that interconnect appliances with smart meters and energy management
+ devices, responsible for reporting the premise’s consumption to the grid
+ at any given time while also carrying messages from the grid back to the
+ premise.
+ Komninos et.
+ al 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dgfig"
+literal "false"
+
+\end_inset
+
+ breifly cover this Smart Grid Architecture in their paper.
+ 
+\end_layout
+
+\begin_layout Standard
+The Smart Grid gives the consumer the opportunity to become a producer of
+ energy as well as a consumer.
+ By installing distributed energy resources at his premises, a customer
+ can generate energy which he can sell to the grid at times when the demand
+ surpasses the supply.
+ Furthermore, by using his plug in electrical vehicle as a battery, a customer
+ not only can store but also import energy from the grid at urgent times.
+ Thus protecting it from damages caused by overloading.
+ 
+\end_layout
+
+\begin_layout Subsection
+Communication
+\end_layout
+
+\begin_layout Standard
+A HEMS requires a reliable communication network using WSN that can transport
+ the consumption details and consumer load behavior periodically.
+ In [
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int3"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int4"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int5"
+literal "false"
+
+\end_inset
+
+], an implementation of a HEMS Unit in a Wireless Sensor Network using a
+ ZigBee Module to communicate with sensor nodes, is presented.
+ The system monitors the device consumption data and sends control signals
+ to end nodes during peak load hours.
+ However, the lifetime of a WSN network deteriorates with time due to the
+ deployment of new sensors in the network.
+ Additionally, Han et al.
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int6"
+literal "false"
+
+\end_inset
+
+ introduced a system for monitoring power consumption using ZigBee as the
+ communication protocol in a WSN.
+ However, in this system the data was collected and aggregated solely by
+ the home server which could lead to data loss in case of a system failure.
+ Moreover, a bridge between ZigBee and TCP/IP stack would be required to
+ connect this system to a community of homes.
+ The above mentioned WSN networks have been extended to wider ranges in
+ the IoT paradigm utilizing the GSM/GPRS networks to remotely control the
+ end-devices in [
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int7"
+literal "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "int8"
+literal "false"
+
+\end_inset
+
+].
+ 
+\end_layout
+
+\begin_layout Section
+Voice assistance
+\end_layout
+
+\begin_layout Subsection
+Design of an intelligent smart home assistant
+\end_layout
+
+\begin_layout Standard
+An intelligent home assistant is a one which responds according to the owner’s
+ movement in the home.
+ As soon as the owner enters the house, all the sensors activates and it
+ results on the illumination of all the lights in the house.
+ Switching on of the AC, playing music on one say, automatic opening of
+ the door, heating the water for bathing, and many more things can be done
+ easily by the smart home assistant on the go.
+ All of the components in a house are linked to a centrally controlled system.
+ The owner of the smart home would have full access to the smart home on
+ his smartphone even he his outside his home.
+ To access one’s home remotely, many options such as Internet, Bluetooth,
+ GSM or wireless technology can be used.
+ The overall system design can be divided into four modules.
+\end_layout
+
+\begin_layout Standard
+Those are –
+\end_layout
+
+\begin_layout Enumerate
+Speech Recognition Module 
+\end_layout
+
+\begin_layout Enumerate
+Power Control Module
+\end_layout
+
+\begin_layout Enumerate
+Remote Control Module
+\end_layout
+
+\begin_layout Enumerate
+Core Control Module
+\end_layout
+
+\begin_layout Subsubsection
+Speech Recognition Module
+\end_layout
+
+\begin_layout Standard
+The voice input given by the operator is converted by the microphone from
+ speech signal to the electric signal.
+ This signal is further transferred to the speech recognition module which
+ converts the analog signal in digital form and then this signal is transferred
+ to the system.
+ Further, it’s upto the system to take the decisions with the help of the
+ relay-based power control module.
+\end_layout
+
+\begin_layout Standard
+Here the STT engine takes the recorded speech as an input and transforms
+ it into written texts.
+ Further, the TTS engine does exactly the opposite of it.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Div1Speech.jpeg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flow chart of Speech Recognition Module
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Power Control Module
+\end_layout
+
+\begin_layout Standard
+A relay-based module responsible for switching on and off any of the smart
+ home appliance device.
+ It requires the input from raspberry pi or any similar tool related to
+ it and based upon the input given by the tool, it switches on/off any of
+ the device.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Div2PowerMod.jpeg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flow chart of Power Control Module
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Remote Control Module
+\end_layout
+
+\begin_layout Standard
+The raspberry or its alternative based system is helpful in storing the
+ current status of the devices into a file and ultimately save them into
+ a server in the cloud.
+ All these device statuses can be fetched from the android or Web applications
+ to display for the users.
+ If any of the status of the device is changed by the owner on the web or
+ on the android it automatically changes the status of the specific device
+ on the cloud server.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Div3Remotecontroll.jpeg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flow chart of Remote Control Module
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Overall system
+\end_layout
+
+\begin_layout Standard
+The combination of all the modules discussed above contributes to the making
+ of the overall system.
+ This overall system has the core modules included in it in the form of
+ various program-based applications.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/Div4Overal system.jpeg
+	width 8cm
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flow chart of Overall system
 \end_layout
 
 \end_inset

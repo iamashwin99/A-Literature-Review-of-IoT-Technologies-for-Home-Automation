@@ -359,3 +359,154 @@
 	year = {2011}
 }
 
+@article{m10,
+	author = {Hagras, Hani and Callaghan, Victor and Colley, Martin and Clarke, Graham and Pounds-Cornish, Anthony and Duman, Hakan},
+	doi = {10.1109/MIS.2004.61},
+	journal = {Intelligent Systems, IEEE},
+	month = {12},
+	pages = {12--20},
+	title = {Creating an Ambient-Intelligence Environment Using Embedded Agents},
+	volume = {19},
+	year = {2004}
+}
+
+@article{m11,
+	abstract = {This paper describes the use of evolving classifiers for activity recognition from sensor readings in ambient assisted living environments. Recognizing the activities an elderly person who lives alone performs, and identifying potential problems from the detected activities is a very active topic of research. However, current approaches do not take into account the fact that the way an activity is performed by a person evolves over time and therefore activities are identified by mapping them to a static model. In this work we describe and evaluate an approach for online classifying based on Evolving Fuzzy Systems (EFS): activities are described by a model that evolves over time, according to the changes observed in the way an activity is performed. These classifiers have been evaluated on three datasets obtained from real home settings, achieving a good recognition performance, at a confidence interval of 95\%, compared with well know probabilistic models in terms of F-Measure, but improving their performance in terms of online capabilities and ability to adapt to the evolving ways in which activities are carried out.},
+	author = {Ord{\'o}{\~n}ez, Fco. Javier and Iglesias, Jos{\'e} Antonio and {de Toledo}, Paula and Ledezma, Agapito and Sanchis, Araceli},
+	doi = {10.1016/j.eswa.2012.08.066},
+	issn = {0957-4174},
+	journal = {Expert Systems with Applications},
+	keywords = {Activity recognition; Evolving Fuzzy Systems; Sensor networks},
+	number = {4},
+	pages = {1248--1255},
+	title = {Online activity recognition using evolving classifiers},
+	url = {https://www.sciencedirect.com/science/article/pii/S0957417412010275},
+	volume = {40},
+	year = {2013}
+}
+
+@article{m12,
+	author = {Bouchachia, Hamid and Vanaret, Charlie},
+	doi = {10.1109/TFUZZ.2013.2279554},
+	journal = {IEEE Transactions on Fuzzy Systems},
+	month = {08},
+	pages = {999--1018},
+	title = {GT2FC: An online Growing interval Type-2 self-learning Fuzzy Classifier},
+	volume = {22},
+	year = {2014}
+}
+
+@article{m13,
+	author = {Khan, Javed and Wei, Jun and Ringn{\'e}r, Markus and Saal, Lao and Ladanyi, Marc and Westermann, Frank and Berthold, Frank and Schwab, Manfred and Antonescu, Cristina and Peterson, Carsten and Meltzer, Paul},
+	doi = {10.1038/89044},
+	journal = {Nature medicine},
+	month = {07},
+	pages = {673--9},
+	title = {Khan J, Wei JS, Ringner M, Saal LH, Ladanyi M, Westermann F, Berthold F, Schwab M, Antonescu CR, Peterson C, Meltzer PSClassification and diagnostic prediction of cancers using gene expression profiling and artificial neural networks. Nat Med 7: 673-679},
+	volume = {7},
+	year = {2001}
+}
+
+@article{m14,
+	author = {Lisboa, P.j.g and Taktak, Azzam},
+	doi = {10.1016/j.neunet.2005.10.007},
+	journal = {Neural networks : the official journal of the International Neural Network Society},
+	month = {06},
+	pages = {408--15},
+	title = {The use of artificial neural networks in decision support in cancer: A systematic review},
+	volume = {19},
+	year = {2006}
+}
+
+@article{m15,
+	author = {Er, Orhan and Yumu{\c s}ak, Nejat and Temurtas, Feyzullah},
+	doi = {10.1016/j.eswa.2010.04.078},
+	journal = {Expert Systems with Applications},
+	month = {12},
+	pages = {7648--7655},
+	title = {Chest diseases diagnosis using artificial neural networks},
+	volume = {37},
+	year = {2010}
+}
+
+@inproceedings{m17,
+	author = {{Cook}, D. J. and {Youngblood}, M. and {Heierman}, E. O. and {Gopalratnam}, K. and {Rao}, S. and {Litvin}, A. and {Khawaja}, F.},
+	booktitle = {Proceedings of the First IEEE International Conference on Pervasive Computing and Communications, 2003. (PerCom 2003).},
+	doi = {10.1109/PERCOM.2003.1192783},
+	number = {},
+	pages = {521--524},
+	title = {MavHome: an agent-based smart home},
+	volume = {},
+	year = {2003}
+}
+
+@inproceedings{m18,
+	author = {Rivera-Illingworth, Fernando and Callaghan, Victor and Hagras, Hani},
+	doi = {10.1049/ic:20050222},
+	isbn = {0-86341-519-9},
+	journal = {IEE Conference Publication},
+	month = {07},
+	pages = {92--99},
+	title = {A neural network agent based approach to activity detection in AmI environments},
+	year = {2005}
+}
+
+@inproceedings{m19,
+	abstract = {The present paper proposes the application of decision trees to model activities of daily living in a multi-resident context. An extension of ID5R, called E-ID5R, is proposed. It augments the leaf nodes and allows such nodes to be multi-labeled. E-ID5R induces a decision tree incrementally to accommodate new instances and new activities as they become available over time. To evaluate the proposed algorithm, the ARAS dataset which is a real-world multi-resident dataset stemming from two houses is used. E-ID5R performs differently on activities of both houses.},
+	address = {Cham},
+	author = {Prossegger, Markus and Bouchachia, Abdelhamid},
+	booktitle = {Adaptive and Intelligent Systems},
+	editor = {Bouchachia, Abdelhamid},
+	isbn = {978-3-319-11298-5},
+	pages = {182--191},
+	publisher = {Springer International Publishing},
+	title = {Multi-resident Activity Recognition Using Incremental Decision Trees},
+	year = {2014}
+}
+
+@inproceedings{m20,
+	abstract = {In this work, a system for recognizing activities in the home setting using a set of small and simple state-change sensors is introduced. The sensors are designed to be ``tape on and forget'' devices that can be quickly and ubiquitously installed in home environments. The proposed sensing system presents an alternative to sensors that are sometimes perceived as invasive, such as cameras and microphones. Unlike prior work, the system has been deployed in multiple residential environments with non-researcher occupants. Preliminary results on a small dataset show that it is possible to recognize activities of interest to medical professionals such as toileting, bathing, and grooming with detection accuracies ranging from 25{\%} to 89{\%} depending on the evaluation criteria used.},
+	address = {Berlin, Heidelberg},
+	author = {Tapia, Emmanuel Munguia and Intille, Stephen S. and Larson, Kent},
+	booktitle = {Pervasive Computing},
+	editor = {Ferscha, Alois and Mattern, Friedemann},
+	isbn = {978-3-540-24646-6},
+	pages = {158--175},
+	publisher = {Springer Berlin Heidelberg},
+	title = {Activity Recognition in the Home Using Simple and Ubiquitous Sensors},
+	year = {2004}
+}
+
+@inproceedings{m21,
+	author = {{Messing}, R. and {Pal}, C. and {Kautz}, H.},
+	booktitle = {2009 IEEE 12th International Conference on Computer Vision},
+	doi = {10.1109/ICCV.2009.5459154},
+	number = {},
+	pages = {104--111},
+	title = {Activity recognition using the velocity histories of tracked keypoints},
+	volume = {},
+	year = {2009}
+}
+
+@book{m22,
+	doi = {10.1007/978-1-84628-347-5},
+	publisher = {Springer London},
+	title = {Evolving Connectionist Systems},
+	url = {https://doi.org/10.1007/978-1-84628-347-5},
+	year = {2007}
+}
+
+@article{mmain,
+	author = {Amiribesheli, Mohsen and Benmansour, Asma and Bouchachia, Abdelhamid},
+	doi = {10.1007/s12652-015-0270-2},
+	journal = {Journal of Ambient Intelligence and Humanized Computing},
+	month = mar,
+	number = {4},
+	pages = {495--517},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {A review of smart homes in healthcare},
+	url = {https://doi.org/10.1007/s12652-015-0270-2},
+	volume = {6},
+	year = {2015}
+}
+

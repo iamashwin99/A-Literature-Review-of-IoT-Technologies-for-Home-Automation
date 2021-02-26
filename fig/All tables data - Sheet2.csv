@@ -1,0 +1,18 @@
+References,Algorithm,Target,Results
+Mozer (1998),ANN (MLP),ADL (general),–
+Cook et al. (2013b),ANN (MLP),ADL (general),Activity recognition: 64 %
+Rivera-Illingworth et al. (2005),ANN (EcoS),ADL(healthcare),"Anomaly detection: 74.57 %  Activity recognition: 89.14 %"
+Li et al. (2008),ANN (OPNN),ADL (healthcare),Activity recognition: 92 %
+Lotfi et al. (2012),ANN (ESN),ADL (healthcare),Abnormally detection: 93–99 %
+Isoda et al. (2004),DT (C4.5),ADL (general),Activity recognition: 90–100 %
+Ravi et al. (2005),DT (C4.5),ADL (general),Activity recognition: 57–97.29 %
+Manley and Deogun (2007),DT (ID3),Resident’s location,Mean error in location: 4.9m and 2.5m on 2 datasets
+Hagras et al. (2004),ISL (fuzzy),ADL (general),280 rules generated in 72 h
+Hagras et al. (2007),Fuzzy type-2,ADL (general),RMSE of 0.229
+Bouchachia (2011),GFMMNN (fuzzy?ANN),ADL (general),Current error rate reached 0.01
+Andreu and Angelov (2013),Evolving fuzzy classifiers,ADL (general),F-measure in 60–70%
+Bouchachia and Vanaret (2014),GT2FC (fuzzy),ADL (general),81.65% Accuracy for 70% labelled data
+Chua et al. (2009),HMM,ADL (healthcare),"90.75 % behaviour-level recognition accuracy  98.45 % observation-level recognition accuracy"
+van Kasteren et al. (2010),HSMM,ADL (general),F-measure of 65.5 %
+Gu et al. (2009),EPs,ADL (general),85.84% Average accuracy by time-sliceing
+Riboni et al. (2011),Ontological approach,ADL (general),80.3 % Accuracy
