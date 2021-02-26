@@ -3014,6 +3014,301 @@ literal "false"
 Voice assistance
 \end_layout
 
+\begin_layout Subsection
+Design of an intelligent smart home assistant
+\end_layout
+
+\begin_layout Standard
+An intelligent home assistant is a one which responds according to the owner’s
+ movement in the home.
+ As soon as the owner enters the house, all the sensors activates and it
+ results on the illumination of all the lights in the house.
+ Switching on of the AC, playing music on one say, automatic opening of
+ the door, heating the water for bathing, and many more things can be done
+ easily by the smart home assistant on the go.
+ All of the components in a house are linked to a centrally controlled system.
+ The owner of the smart home would have full access to the smart home on
+ his smartphone even he his outside his home.
+ To access one’s home remotely, many options such as Internet, Bluetooth,
+ GSM or wireless technology can be used.
+ The overall system design can be divided into four modules.
+\end_layout
+
+\begin_layout Standard
+Those are –
+\end_layout
+
+\begin_layout Enumerate
+Speech Recognition Module 
+\end_layout
+
+\begin_layout Enumerate
+Power Control Module
+\end_layout
+
+\begin_layout Enumerate
+Remote Control Module
+\end_layout
+
+\begin_layout Enumerate
+Core Control Module
+\end_layout
+
+\begin_layout Subsubsection
+Speech Recognition Module
+\end_layout
+
+\begin_layout Standard
+The voice input given by the operator is converted by the microphone from
+ speech signal to the electric signal.
+ This signal is further transferred to the speech recognition module which
+ converts the analog signal in digital form and then this signal is transferred
+ to the system.
+ Further, it’s upto the system to take the decisions with the help of the
+ relay-based power control module.
+\end_layout
+
+\begin_layout Standard
+Here the STT engine takes the recorded speech as an input and transforms
+ it into written texts.
+ Further, the TTS engine does exactly the opposite of it.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Power Control Module
+\end_layout
+
+\begin_layout Standard
+A relay-based module responsible for switching on and off any of the smart
+ home appliance device.
+ It requires the input from raspberry pi or any similar tool related to
+ it and based upon the input given by the tool, it switches on/off any of
+ the device.
+\end_layout
+
+\begin_layout Subsubsection
+Remote Control Module
+\end_layout
+
+\begin_layout Standard
+The raspberry or its alternative based system is helpful in storing the
+ current status of the devices into a file and ultimately save them into
+ a server in the cloud.
+ All these device statuses can be fetched from the android or Web applications
+ to display for the users.
+ If any of the status of the device is changed by the owner on the web or
+ on the android it automatically changes the status of the specific device
+ on the cloud server.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Overall system
+\end_layout
+
+\begin_layout Standard
+The combination of all the modules discussed above contributes to the making
+ of the overall system.
+ This overall system has the core modules included in it in the form of
+ various program-based applications.
+ 
+\end_layout
+
+\begin_layout Section
+Typical home automation architecture
+\end_layout
+
+\begin_layout Standard
+Smart Homes are the beautiful extensive network of Internet of things.
+ The framework proposed in the building of smart homes incorporates the
+ communication of various interconnected devices at home with the help of
+ Internet of things.
+ This framework includes the acceptance of the incoming requests by the
+ server from connected devices and support exchange of information between
+ them.
+ Various components of a smart home would be looked at in this section.
+ These devices collaborate and synchronize with each other through various
+ Physical network, cloud servers and virtual networks.
+ Further below the various smart home components would be looked upon:
+\end_layout
+
+\begin_layout Enumerate
+Server – A local database which monitors and coordinate the entire system
+ centrally.
+ All the devices are connected remotely to the server.
+ If any server receives any request from a smart phone, it informs the source
+ node and finally the message is forwarded to the destination node.
+ Various rules of encryption are applied by the server to ensure the security
+ of the system and to prevent the framework from unauthorized access.
+\end_layout
+
+\begin_layout Enumerate
+Smart Phone – The smartphones are an important component of this IoT based
+ framework because it helps the person to send requests to the server for
+ its various services.
+ Although, since the smart phone controls almost all the actions of this
+ framework, it requires biometric authentication to control the functionality
+ of the device.
+ Also, every activity of the smartphone is also monitored by the centralized
+ server.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Smart Thermostat – This component in the framework is used to control the
+ temperature of the room.
+ The outside weather updates are constantly given to the thermostat and
+ on the basis of which it regulates the temperature of the room to the optimal
+ level.
+ Also, it’s console interface reacts to the presence of a person in the
+ house.
+ If it finds that no one is present in the house, all the interconnected
+ devices automatically switches to the low power mode.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Centralized AC- Moderating the room’s temperature and regulating the air
+ outflow involving motion and infrared sensors is the main characteristic
+ of the centralized AC.
+ This centralized system always ensures that if no one is present in the
+ house than ultimately those sensors would put the AC to off mode.
+ Hence these devices are power efficient due to IoT enabled in them.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Connected Lights- All the lights inside a smart home are connected with
+ a smartphone as well as with the centralized server.
+ As soon as the smartphone sends any request to the centralized server,
+ the server switches the lights as per the availability of person in the
+ room.
+ Also, the lighting is adjusted by the weather data as well.
+ The weather outside adjusts the illumination factor in the house.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Windows and Ventilation Control – Smart Glass replaces the standard window.
+ This smart glass contains thermochromic filters applied to outer portion
+ of the double-sided glass window.
+ Beyond any threshold temperature, these glass panes regulate the intensity
+ of solar rays which comes inside the house and regulates the room temperature.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Smart TV- The new generation TV can be controlled using smart phones as
+ well.
+ These TV nowadays comes with internet support as well which helps in online
+ streaming of videos and TV programs.
+\end_layout
+
+\begin_layout Enumerate
+ Smart Refrigerator – This new boost in the IoT devices comes with magnificent
+ features.
+ It keeps the track of stored food items, and if there is any issue it sends
+ the reminder to the person’s smartphone.
+ These Smart fridges also comes with inbuilt camera which helps in the person
+ to keep track of its food items through the smartphone.
+ If any grocery item is finished, the server sends a message to the owner’s
+ mobile.
+\end_layout
+
+\begin_layout Subsection
+IoT Platforms
+\end_layout
+
+\begin_layout Standard
+The Internet of Things (IoT) platform is an integrator, a layer that allows
+ multiple entities to be linked together.
+ These can be physical devices or sensors, which emit interesting data and
+ drivers to control conditions surrounding the world or some entity without
+ a physical representation.
+ In most cases, this is simply accomplished through some application codes.
+ If the physical device cannot communicate directly to the Internet of Things
+ platform, there is a need of another component immediately.
+ This component is commonly known as a gateway.
+ They can be either physical or based on application.
+ It usually provides a point of integration for devices that use several
+ wireless technologies such as Local Bluetooth, Zigbee or Z-Wave, but it
+ can also act as an integration point for a third-party Low Power Wide Area
+ Networks (LPWAN), such as Sigfox, or Narrow Internet of Things (NB-IoT).
+ Moreover, the gateway good place to pre-process the sensor data.
+ Also, looking at the point of view of applications, they usually process
+ the data sent from the devices, command the actuators, and looking at all
+ the circumstances they close the feedback Loop.
+\end_layout
+
+\begin_layout Standard
+Management Layer is one of the most important layers in the IoT platform.
+ It manages the registration of the entities of the platform as well as
+ supervises all the devices, apps and gateways of the IoT platform.
+ Also, restriction of unauthorized access is also provided by the ACL(Access
+ Control List) mechanism .
+ API’s are one of the most integral part of these IoT platforms.
+ REST is one of the most frequently used API.
+ Also some real time APIs such as XMPP, CoAP, MQTT are also actively used.
+ Increasing number of APIs has lead to increase in effort to implement the
+ whole platform.
+ Security is the prime focus of every entity present in the IoT platform.
+ Data transferred must be done through a very secured channel or at least
+ must be encrypted to avoid its misuse.
+ In the high level overview of IoT platform, gateways are the other source
+ of connection between the devices if the devices are not connected directly.
+\end_layout
+
+\begin_layout Standard
+MQTT Broker is the exchange point on which IoT platform of IBM Cloud is
+ based on.
+ Exchanging of messages between the clients is served by this central point
+ known as MQTT broker.
+ Here clients are the gateways, devices and applications.
+ Two types of MQTT clients are found.
+ Clients who represent device site, post events in moderated event MQTT
+ Topic, and at the same time, they can subscribe to MQTT broker in order
+ to receive orders.
+ On the other hand, Customers who represent the Application Location, work
+ in the opposite direction.
+ Usually they share Topics of the event and its publication on leadership
+ topics.
+ The Internet of Things platform is the medium through which an application
+ is made and executed.
+ Hundreds of Sensors can be connected to an application and we can visualize
+ a data being built.
+ Since, the Internet of Things platform is just a layer of integration,
+ Data persistence should be treated separately.
+ 
+\end_layout
+
+\begin_layout Subsection
+AWS-IoT
+\end_layout
+
+\begin_layout Standard
+AWS-IoT is a cloud service provider for various IoT devices to connect with
+ other IoT devices or even with the AWS cloud services.
+ It also helps to integrate the IoT devices with the help of the software
+ into the AWS-IoT clouds.
+ Devices can access the cloud services of AWS by connecting to the AWS IoT.
+ 
+\end_layout
+
+\begin_layout Standard
+Some of the protocols that AWS-IoT follows in the field of home automation
+ are as follows: • MQTT (Message Queuing and Telemetry Transport) • MQTT
+ over WSS (Websockets Secure) • HTTPS (Hypertext Transfer Protocol - Secure).
+ • LoRaWAN (Long Range Wide Area Network).
+ MQTT or MQTT over WSS clients are supported by the AWS IoT to publish the
+ messages.
+ Clients with HTTPS protocols are also helped by AWS-IoT.
+ LoRaWAN of AWS-IoT connects and manages the LoRaWAN devices.
+ If it were not been provided by the AWS, there would be a need of development
+ of a LNS to connect and manage the wireless devices.
+ 
+\end_layout
+
 \begin_layout Section
 Challenges of Home automation systems
 \end_layout
