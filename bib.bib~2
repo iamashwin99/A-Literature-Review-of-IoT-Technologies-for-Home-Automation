@@ -699,3 +699,36 @@ Despite the many problems still encountered such as technological problems relat
 	year = {2004}
 }
 
+@article{m$10,
+	author = {Chen, Liming and Nugent, Chris},
+	doi = {10.1108/17440080911006199},
+	journal = {IJWIS},
+	month = {11},
+	pages = {410--430},
+	title = {Ontology‐based activity recognition in intelligent pervasive environments},
+	volume = {5},
+	year = {2009}
+}
+
+@inproceedings{m$11,
+	author = {{Riboni}, D. and {Pareschi}, L. and {Radaelli}, L. and {Bettini}, C.},
+	booktitle = {2011 IEEE International Conference on Pervasive Computing and Communications Workshops (PERCOM Workshops)},
+	doi = {10.1109/PERCOMW.2011.5766927},
+	number = {},
+	pages = {427--431},
+	title = {Is ontology-based activity recognition really effective?},
+	volume = {},
+	year = {2011}
+}
+
+@inproceedings{m$12,
+	author = {{Tao Gu} and {Zhanqing Wu} and {Xianping Tao} and {Pung}, H. K. and {Jian Lu}},
+	booktitle = {2009 IEEE International Conference on Pervasive Computing and Communications},
+	doi = {10.1109/PERCOM.2009.4912776},
+	number = {},
+	pages = {1--9},
+	title = {epSICAR: An Emerging Patterns based approach to sequential, interleaved and Concurrent Activity Recognition},
+	volume = {},
+	year = {2009}
+}
+

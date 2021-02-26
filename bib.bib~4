@@ -672,3 +672,14 @@ Despite the many problems still encountered such as technological problems relat
 	year = {2013}
 }
 
+@article{m$8,
+	author = {{Salvador}, C. H. and {Carrasco}, M. P. and {de Mingo}, M. A. G. and {Carrero}, A. M. and {Montes}, J. M. and {Martin}, L. S. and {Cavero}, M. A. and {Lozano}, I. F. and {Monteagudo}, J. L.},
+	doi = {10.1109/TITB.2004.840067},
+	journal = {IEEE Transactions on Information Technology in Biomedicine},
+	number = {1},
+	pages = {73--85},
+	title = {Airmed-cardio: a GSM and Internet services-based system for out-of-hospital follow-up of cardiac patients},
+	volume = {9},
+	year = {2005}
+}
+

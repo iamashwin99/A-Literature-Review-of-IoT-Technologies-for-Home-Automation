@@ -683,3 +683,19 @@ Despite the many problems still encountered such as technological problems relat
 	year = {2005}
 }
 
+@article{m$9,
+	address = {Los Alamitos, CA, USA},
+	author = {Pung, H. and Gu, T. and Zhang, D.},
+	doi = {10.1109/MPRV.2004.19},
+	issn = {1558-2590},
+	journal = {IEEE Pervasive Computing},
+	keywords = {context-aware middleware; osgi service platform; context model},
+	month = {oct},
+	number = {04},
+	pages = {66--74},
+	publisher = {IEEE Computer Society},
+	title = {Toward an OSGi-Based Infrastructure for Context-Aware Applications},
+	volume = {3},
+	year = {2004}
+}
+

@@ -732,3 +732,34 @@ Despite the many problems still encountered such as technological problems relat
 	year = {2009}
 }
 
+@article{m$13,
+	author = {{Helal}, S. and {Mann}, W. and {El-Zabadani}, H. and {King}, J. and {Kaddoura}, Y. and {Jansen}, E.},
+	doi = {10.1109/MC.2005.107},
+	journal = {Computer},
+	number = {3},
+	pages = {50--60},
+	title = {The Gator Tech Smart House: a programmable pervasive space},
+	volume = {38},
+	year = {2005}
+}
+
+@inproceedings{m$14,
+	author = {Wongpatikaseree, Konlakorn and Ikeda, Mitsuru and Buranarach, Marut and Supnithi, Thepchai and Osman, Azman and Tan, Yasuo},
+	doi = {10.1109/KICSS.2012.26},
+	journal = {Proceedings - 2012 7th International Conference on Knowledge, Information and Creativity Support Systems, KICSS 2012},
+	month = {11},
+	pages = {},
+	title = {Activity Recognition Using Context-Aware Infrastructure Ontology in Smart Home Domain},
+	year = {2011}
+}
+
+@inproceedings{m$15,
+	author = {Wongpatikaseree, Konlakorn and Ikeda, Mitsuru and Buranarach, Marut and Supnithi, Thepchai and Osman, Azman and Tan, Yasuo},
+	doi = {10.1109/KICSS.2012.26},
+	journal = {Proceedings - 2012 7th International Conference on Knowledge, Information and Creativity Support Systems, KICSS 2012},
+	month = {11},
+	pages = {},
+	title = {Activity Recognition Using Context-Aware Infrastructure Ontology in Smart Home Domain},
+	year = {2011}
+}
+
