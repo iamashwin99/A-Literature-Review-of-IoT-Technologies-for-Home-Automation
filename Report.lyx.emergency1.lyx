@@ -334,10 +334,14 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement p
+placement H
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -853,9 +857,10 @@ With advancement in the intelligent IoT systems, more and more features
 
 \begin_layout Standard
 \begin_inset Float table
+placement H
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \noindent
@@ -2215,7 +2220,7 @@ literal "false"
 
 \begin_layout Standard
 \begin_inset Float table
-placement h
+placement H
 wide false
 sideways false
 status collapsed
@@ -3809,7 +3814,7 @@ The common computational models used for activity recognition in SHs will
 
 \begin_layout Standard
 \begin_inset Float table
-placement h
+placement H
 wide false
 sideways false
 status collapsed
@@ -5098,7 +5103,7 @@ Visit a state - emit a residue from the state's probability distribution
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status open
@@ -6199,7 +6204,7 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float table
-placement h
+placement H
 wide false
 sideways false
 status collapsed

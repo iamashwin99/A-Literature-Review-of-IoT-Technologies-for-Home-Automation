@@ -518,3 +518,168 @@
 	year = {2010}
 }
 
+@article{mfig1,
+	author = {Park, Jin-ho and Salim, Mikail Mohammed and Jo, Jeong Hoon and Sicato, Jose Costa Sapalo and Rathore, Shailendra and Park, Jong Hyuk},
+	doi = {10.1186/s13673-019-0190-9},
+	journal = {Human-centric Computing and Information Sciences},
+	month = aug,
+	number = {1},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {{CIoT}-Net: a scalable cognitive {IoT} based smart city network architecture},
+	url = {https://doi.org/10.1186/s13673-019-0190-9},
+	volume = {9},
+	year = {2019}
+}
+
+@article{mfig2,
+	author = {Amiribesheli, Mohsen and Benmansour, Asma and Bouchachia, Abdelhamid},
+	doi = {10.1007/s12652-015-0270-2},
+	journal = {Journal of Ambient Intelligence and Humanized Computing},
+	month = mar,
+	number = {4},
+	pages = {495--517},
+	publisher = {Springer Science and Business Media {LLC}},
+	title = {A review of smart homes in healthcare},
+	url = {https://doi.org/10.1007/s12652-015-0270-2},
+	volume = {6},
+	year = {2015}
+}
+
+@inproceedings{m25,
+	author = {Li, Hui and Zhang, Qingfan and Duan, Peiyong},
+	booktitle = {2009 Sixth International Conference on Fuzzy Systems and Knowledge Discovery},
+	doi = {10.1109/fskd.2009.457},
+	publisher = {{IEEE}},
+	title = {Intelligent Fuzzy Agent for Intelligent Inhabited Environments},
+	url = {https://doi.org/10.1109/fskd.2009.457},
+	year = {2009}
+}
+
+@inproceedings{blockchain,
+	author = {Lombardi, Federico and Aniello, Leonardo and {De Angelis}, Stefano and Margheri, Andrea and Sassone, V.},
+	doi = {10.1049/cp.2018.0042},
+	month = {01},
+	pages = {},
+	title = {A Blockchain-based Infrastructure for Reliable and Cost-effective IoT-aided Smart Grids},
+	year = {2018}
+}
+
+@article{exergy,
+	title = {Exergy - Technical White Pa-per,2017.https://exergy.energy/wp-content/uploads/2017/11/Exergy-Whitepaper-v7.pdf.}
+}
+
+@article{electron,
+	title = {Electron.http://www.electron.org.uk.},
+	year = {2018}
+}
+
+@article{m$1,
+	abstract = {Objective
+To investigate the efficacy of a u-healthcare service using Zigbee and mobile phone for elderly patients with diabetes mellitus or heart diseases.
+Materials and methods
+From July to October, 2005, 29 patients were enrolled in our study. Two selected u-healthcare items, ECG and blood glucose measurement, were monitored. Twenty patients were provided with ZigBee built-in blood glucometer and mobile phones, and were instructed on using a web service where the measured blood glucose could be transmitted directly to the web and be administrated. Nine patients participated in ECG monitoring, by using a wireless, transmittable ECG recording instrument equipped with ZigBee protocol attached to their chest. Daily average transmission frequency, rate of transmission loss, and error reasons were analyzed. In addition, the patients were asked to score their degree of satisfaction about the sensors and u-healthcare services.
+Results
+The mean transmission frequencies were 2.1 times/day in blood glucose monitoring and 6.1 times/day in ECG. The patients{\rq} satisfaction scores of the blood glucometer and service used in this research were 8.59 and 9.01 of 10 points, respectively. The mean satisfaction scores about ECG sensor and ECG monitoring services were 5.79 and 7.29, respectively.
+Discussion
+Despite the many problems still encountered such as technological problems related to sensors and some problems like battery replacement, we could transfer the data of glucometer and ECG sensors to web-server via ZigBee protocol. Authors think the ZigBee could be one of components of wireless u-healthcare systems in the future due to its advantages of lower power consumption.},
+	author = {Lee, Hak Jong and Lee, Sun Hee and Ha, Kyoo-Seob and Jang, Hak Chul and Chung, Woo-Young and Kim, Ju Young and Chang, Yoon-Seok and Yoo, Dong Hyun},
+	doi = {10.1016/j.ijmedinf.2008.07.005},
+	issn = {1386-5056},
+	journal = {International Journal of Medical Informatics},
+	keywords = {Ubiquitous healthcare; Mobile phone; Elderly patient; Self monitoring blood glucose (SMBG); Electrocardiography (ECG)},
+	number = {3},
+	pages = {193--198},
+	title = {Ubiquitous healthcare service using Zigbee and mobile phone for elderly patients},
+	url = {https://www.sciencedirect.com/science/article/pii/S1386505608001214},
+	volume = {78},
+	year = {2009}
+}
+
+@article{m$2,
+	author = {van Hoof, J. and Kort, H.S.M. and Rutten, P.G.S. and Duijnstee, M.S.H.},
+	doi = {10.1016/j.ijmedinf.2011.02.010},
+	journal = {International Journal of Medical Informatics},
+	month = may,
+	number = {5},
+	pages = {310--331},
+	publisher = {Elsevier {BV}},
+	title = {Ageing-in-place with the use of ambient intelligence technology: Perspectives of older users},
+	url = {https://doi.org/10.1016/j.ijmedinf.2011.02.010},
+	volume = {80},
+	year = {2011}
+}
+
+@inproceedings{m$3,
+	author = {Lee, Jin-Shyan and Su, Yu-Wei and Shen, Chung-Chou},
+	booktitle = {{IECON} 2007 - 33rd Annual Conference of the {IEEE} Industrial Electronics Society},
+	doi = {10.1109/iecon.2007.4460126},
+	publisher = {{IEEE}},
+	title = {A Comparative Study of Wireless Protocols: Bluetooth, {UWB}, {ZigBee}, and Wi-Fi},
+	url = {https://doi.org/10.1109/iecon.2007.4460126},
+	year = {2007}
+}
+
+@inproceedings{m$4,
+	abstract = {Due to progress in wired and wireless home networking, sensor networks, networked appliances, mechanical and control engineering, and computers, we can build smart homes, and many smart home projects are currently proceeding throughout the world. However, we have to be careful not to repeat the same mistake that was made with home automation technologies that were booming in the 1970s. That is, [total?] automation should not be a goal of smart home technologies. I believe the following points are important in construction of smart homes from users' viewpoints: development of interface technologies between humans and systems for detection of human intensions, feelings, and situations; improvement of system knowledge; and extension of human activity support outside homes to the scopes of communities, towns, and cities.},
+	address = {USA},
+	author = {Yamazaki, Tatsuya},
+	booktitle = {Proceedings of the 2006 International Conference on Hybrid Information Technology - Volume 02},
+	isbn = {0769526748},
+	numpages = {6},
+	pages = {350--355},
+	publisher = {IEEE Computer Society},
+	series = {ICHIT '06},
+	title = {Beyond the Smart Home},
+	year = {2006}
+}
+
+@article{m$5,
+	author = {Hazen, Mark E.},
+	doi = {10.1109/mc.2008.205},
+	journal = {Computer},
+	month = jun,
+	number = {6},
+	pages = {90--92},
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	title = {The Technology Behind {HomePlug} {AV} Powerline Communications},
+	url = {https://doi.org/10.1109/mc.2008.205},
+	volume = {41},
+	year = {2008}
+}
+
+@inproceedings{m$6,
+	author = {Tompros, Spyridon and Mouratidis, Nikolaos and Hrasnica, Halid and Caragiozidis, Michael},
+	booktitle = {2009 {IEEE} International Symposium on Power Line Communications and Its Applications},
+	doi = {10.1109/isplc.2009.4913431},
+	month = mar,
+	publisher = {{IEEE}},
+	title = {A novel power line network architecture for managing the energy resources of the residential environment},
+	url = {https://doi.org/10.1109/isplc.2009.4913431},
+	year = {2009}
+}
+
+@article{m$7,
+	author = {Viani, Federico and Robol, Fabrizio and Polo, Alessandro and Rocca, Paolo and Oliveri, Giacomo and Massa, Andrea},
+	doi = {10.1109/jproc.2013.2266858},
+	journal = {Proceedings of the {IEEE}},
+	month = nov,
+	number = {11},
+	pages = {2381--2396},
+	publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+	title = {Wireless Architectures for Heterogeneous Sensing in Smart Home Applications: Concepts and Real Implementation},
+	url = {https://doi.org/10.1109/jproc.2013.2266858},
+	volume = {101},
+	year = {2013}
+}
+
+@article{m$8,
+	author = {{Salvador}, C. H. and {Carrasco}, M. P. and {de Mingo}, M. A. G. and {Carrero}, A. M. and {Montes}, J. M. and {Martin}, L. S. and {Cavero}, M. A. and {Lozano}, I. F. and {Monteagudo}, J. L.},
+	doi = {10.1109/TITB.2004.840067},
+	journal = {IEEE Transactions on Information Technology in Biomedicine},
+	number = {1},
+	pages = {73--85},
+	title = {Airmed-cardio: a GSM and Internet services-based system for out-of-hospital follow-up of cardiac patients},
+	volume = {9},
+	year = {2005}
+}
+

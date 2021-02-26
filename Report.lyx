@@ -4,7 +4,7 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass extarticle
+\textclass IEEEtran
 \begin_preamble
 \hypersetup{urlcolor=blue}
 \end_preamble
@@ -275,6 +275,22 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -318,14 +334,10 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
+placement p
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \align center
@@ -841,7 +853,6 @@ With advancement in the intelligent IoT systems, more and more features
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
 wide false
 sideways true
 status collapsed
@@ -1994,7 +2005,7 @@ Each layer of the system has its own function and comes with its own challenges
 \end_layout
 
 \begin_layout Subsection
-Sensors and Networks
+Sensors Hardware
 \end_layout
 
 \begin_layout Standard
@@ -2204,7 +2215,7 @@ literal "false"
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
+placement h
 wide false
 sideways false
 status collapsed
@@ -3530,6 +3541,7 @@ This forms the backbone of the hardware layer by connecting sensors and
  It carries the monitored data from the installed sensors to the data sink(
  coordinator) and forwards the control data to the actuators in the smart
  home system.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3557,12 +3569,165 @@ MTS or UMTS -Universal Mobile Telecommunications systems
 Low Powered Wireless networks
 \end_layout
 
-\begin_layout Subsubsection
-Power line communication standards 
+\begin_layout Standard
+These protocols are designed so as to sustain a network of devices/sensors
+ that are energy constrained.
+ These devices generally spend most of the time in power saving mode, which
+ could otherwise break the network connectivity.
+ 
+\end_layout
+
+\begin_layout Standard
+Few LPW standards are: 
+\end_layout
+
+\begin_layout Enumerate
+ZigBee: very prominent wireless protocol used in off-the-shelf products
+ as well as Do-it-Yourself Kits by many tinkerers and teaching aids.
+ It operates on the 2.4GHz band, and gives a data-rate upto 250kbps.
+ The maximum transmission range possible is 75m if the transmitter is powerful
+ enough.
+ It has been deployed in many Home-based IoT applications such as- 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+U-Health - Used 12 types of wireless sensors to monitor health parameters
+ of the elderly.The sensors were ZigBee based that transmit the data through
+ the phone to a server that could visualize the data for the caregivers
+ (Lee et al.
+ 2009
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$1"
+literal "false"
+
+\end_inset
+
+) .
+ Participants reported 8.5 on 10 for satisfaction 
+\end_layout
+
+\begin_layout Enumerate
+Unattended Autonomous Surveillance (UAS)-Van Hoof et al.
+ (2011)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$2"
+literal "false"
+
+\end_inset
+
+ developed a system to aid mild-stage dementia patients.
+ They deployed an array of ZigBee based sensors in living-rooms,bedrooms
+ and kitchen.The system tracked patients' sleep, movement, falls etc.
+ It could detect and alert the caregivers in the case of any patient falling.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Bluetooth: Extremely low cost LPW solution that is suitable for PAN and
+ BAN.
+ It supports a maximum bandwidth of 1Mbps over the 2.4GHz signal-band and
+ a range of 10m.
+ But this is not commonly used for smart-homes as it supports fewer devices
+ as well as data-rates when compared against ZigBee and WiFi, as pointed
+ out by Lee et al.
+ (2007)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$3"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+RFID: This is a system of tags and computer-based readers that automatically
+ identifies the tags and supports frequency ranges in low,high and ultra-high.
+ The reading range is directly proportional to the frequency used.
+ It can be used passively for recognizing residents with tags and an active
+ RFID system can be created for environment monitoring (Yamazaki (2006)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$4"
+literal "false"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsubsection
-Personal computer networking protocols 
+Power line communication standards
+\end_layout
+
+\begin_layout Standard
+PLC technologies allow the networking over the available Electrical terminals
+ in the home.
+ Although this is cost effective as it reuses existing power lines, most
+ wired solutions are very restricted to deploy on large scales.
+ Thus most IoT systems such as smart-homes usually deploy a mixed network
+ of wired and wireless communications.
+\end_layout
+
+\begin_layout Standard
+Following are few standards for PLC networks: 
+\end_layout
+
+\begin_layout Enumerate
+X10: This is an Internationally accepted protocol which allows devices to
+ communicate over the existing Electrical house wiring.
+ It can complement a wireless network to cover the whole house.
+ Rantz et al.
+ (2008) deployed an X10 sensor network for a retirement home to monitor
+ daily activities and health.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Home-Plug: Are enhanced versions of X10[ (Hazen 2008)]
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$5"
+literal "false"
+
+\end_inset
+
+ by the Home-Plug Power-Line Alliance that supports a bandwidth of 200Mbps
+ upto 350m indoor power-line reliably without packet-drops.
+ 
+\end_layout
+
+\begin_layout Enumerate
+KNX: It is a heterogeneous protocol for smart buildings and has incorporated
+ Internet-Protocol along with BatiBUS, EIB and KNX-RF into a single package
+ (Tompros et al.
+ 2009)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$6"
+literal "false"
+
+\end_inset
+
+.
+ This allows KNX to support Twisted-Pair, power-lines and Radio-Frequency
+ for transmission.It allows one to combine Wi-Fi with low power wireless
+ protocols such as ZigBee,Z-wave (Viani et al.
+ 2013)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$7"
+literal "false"
+
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Subsubsection
@@ -3579,22 +3744,19 @@ These networks are now widespread with the advent of smartphones and are
 \end_layout
 
 \begin_layout Standard
-A Mobile network device can serve as the intermediate node between the home-devi
-ces and supporting cloud services.
- This topology would allow the telecommunication services such as SMS/MMS
- to remotely interact with the Smart-Home as seen in the following implementatio
-ns Foo Siang Fook et al.
- 2006; Trumler et al.
- 2003; Zhaohui et al.
- (2011)
+Salvador et al.(2005)
 \begin_inset CommandInset citation
 LatexCommand cite
-key "m4"
+key "m$8"
 literal "false"
 
 \end_inset
 
-) 
+ implemented a MTS and Internet services-based system for out-of-hospital
+ follow-up of cardiac patients ,called Airmed-cardio.
+ Every patient has a portable monitoring setup and a smartphone that transmits
+ the data through the MTS, which is then monitored by the hospital.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -3647,7 +3809,7 @@ The common computational models used for activity recognition in SHs will
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
+placement h
 wide false
 sideways false
 status collapsed
@@ -4936,7 +5098,7 @@ Visit a state - emit a residue from the state's probability distribution
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
+placement h
 wide false
 sideways false
 status open
@@ -5026,19 +5188,188 @@ literal "false"
 \end_layout
 
 \begin_layout Subsubsection
-Support Vector Machine Classification
+Emerging patterns
 \end_layout
 
-\begin_layout Subsubsection
-Emerging patterns
+\begin_layout Standard
+Emerging patterns are sets of items whose frequency changes significantly
+ from one dataset to another.They can be utilised to discover distinctions
+ inherently present amongst a collection datasets and are a great way for
+ constructing accurate classifiers.
+ Instance 1: {location =kitchen, object = stove} is an EP for the activity
+ ‘‘cooking” The set of EPs of an activity constitute the activity model
+ for the activity.
+ 
+\end_layout
+
+\begin_layout Standard
+Emerging Patterns (EPs) (Gu et al.
+ 2009)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$9"
+literal "false"
+
+\end_inset
+
+ were used to model and discriminate the activities.It also shows how activity
+ models can be built from sensor readings using EPs.
+ A real-world data set was collected from wearable sensors (RFID-wristband
+ readers and iMote2 sets) by 4 people.
+ In all 26 common ADLs such as coffee making, tea making, oatmeal making,
+ shaving etc.
+ have been considered and EPs were then generated for each activity and
+ using time-slice accuracy to recognize activities through intervals of
+ time, an average accuracy of 85.84 % was achieved for different activities.
 \end_layout
 
 \begin_layout Subsubsection
 Ontological modeling
 \end_layout
 
+\begin_layout Standard
+Ontology is a way to model the properties of a given domain and how they
+ are related by defining a set of concepts and categories that represent
+ the subject.
+ Activity ontologies describe the hierarchy of activities, activity types
+ and their relationships using languages like OWL and RDF.
+ Ontological reasoning is used to recognize activities by identifying contextual
+ information such as sensor reading, location of persons and objects, properties
+ of objects, etc.
+ 
+\end_layout
+
+\begin_layout Standard
+The following summarises a few papers on the same : 
+\end_layout
+
+\begin_layout Itemize
+Chen and Nugent (2009)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$10"
+literal "false"
+
+\end_inset
+
+ - Described an algorithm for recognizing activities using ontologies.
+ By aggregating sensor observations along a timeline, a specific situation
+ that corresponds to an unknown activity could be reached.
+ For example, the activation of the contact sensors on a ‘‘cup’’ and ‘‘milk
+ bottle’’ can link the ‘‘cup’’ and ‘‘milk’’ to the unknown activity through
+ a concept ‘‘hasContainer’’ and ‘‘hasAddings’’ properties - like ‘‘hasContainer(
+cup)’’ and ‘‘hasAddings(milk)’’.
+ By matching this situation against activity ontologies, the activity class
+ that mostly overlaps with the situation (e.g.,‘‘MakeDrink’’) is considered
+ to be the actual activity.
+ 
+\end_layout
+
+\begin_layout Itemize
+Riboni et al.
+ (2011)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$11"
+literal "false"
+
+\end_inset
+
+ - Evaluate the effectiveness of the ontological approach based on the dataset
+ described in van Kasteren et al.
+ (2008), and showed that ontological techniques underperform data-driven
+ techniques like HMM in absence of temporal reasoning.
+ But when ontological techniques were extended with temporal information,
+ their effectiveness (80.3 % accuracy) becomes comparable to HMM (79.4 % accuracy).
+ 
+\end_layout
+
 \begin_layout Subsubsection
 Context aware reasoning 
+\end_layout
+
+\begin_layout Standard
+Context-aware systems are concerned with the acquisition of context gathered
+ from sensors and adapt their reactions to the behavior based on the recognized
+ context using reasoning techniques.
+ It highlights the significance of contexts to recognize the environmental
+ conditions within the living space to help make the smart home system intellige
+ntly interactive and self-adaptive to ultimately ease user's tasks.
+ There exist several approaches for context modeling and reasoning such
+ as Unified Modelling Language, Object-oriented Models, key-Value models,
+ and domain/web ontologies.
+ The latter enables the system to define contexts semantically and share
+ common knowledge of the structure of context among users, devices, and
+ services (Gu et al.
+ 2004)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$12"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Some studies that used Context-aware Reasoning- 
+\end_layout
+
+\begin_layout Itemize
+Helal et al.
+ (2005)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$13"
+literal "false"
+
+\end_inset
+
+- Introduced a reference model for healthcare context-aware SHs.
+ The context was generated by a set of sensors and actuators that were managed
+ through OSGi (Open Service Gateway initiative) service bundles.
+ System objects represented the sensors and actuators in the environment
+ and were modeled along with contexts using ontologies.
+ Authors presented two mere applications of ‘‘Smart Floor’’ and ‘‘Smart
+ Plug’’ to prove the effectiveness of the system.
+ 
+\end_layout
+
+\begin_layout Itemize
+Wongpatikaseree et al.
+ (2012)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$14"
+literal "false"
+
+\end_inset
+
+ -Introduced a context aware activity recognition system.
+ An ontology was exploited to model the context which is obtained through
+ a set of sensors.
+ To handle various activities of daily living, especially in ambiguous situation
+s, the context is augmented with information of some simple activities such
+ as watching TV, relaxing and sleeping, were simulated.
+\end_layout
+
+\begin_layout Itemize
+Riboni and Bettini (2011)
+\begin_inset CommandInset citation
+LatexCommand cite
+key "m$15"
+literal "false"
+
+\end_inset
+
+- Implemented a hybrid of ontology and statistical context-aware activity.
+ Data from activities such as walking, brushing teeth, writing on a blackboard
+ and hiking were collected via a phone GPS and Accelerometer, and an acceleromet
+er wristband on an Android platform.
+ The activity recognizer relied on an ontological reasoning which is combined
+ with statistical classification to recognize activities and gave an accuracy
+ of 93.44%
 \end_layout
 
 \begin_layout Section
@@ -5488,6 +5819,71 @@ The Smart Grid gives the consumer the opportunity to become a producer of
  
 \end_layout
 
+\begin_layout Standard
+One of the main advantages of smart grids is trans-active energy, where
+ distributed energy resources, e.g.
+ smart meters, develop towards Internet-of-Things (IoT) devices, enabling
+ prosumers to trade energy directly, without the need of involving any centralis
+ed third party.
+ The expected advantages in terms of cost-effectiveness would be significant,
+ and thus technical solutions are constantly being developed and tested,
+ and major utility companies plan large-scale deployment.
+ However, introducing transactive energy in the smart grid entails new security
+ threats, such as forging energy transactions.
+ Federico et al.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "blockchain"
+literal "false"
+
+\end_inset
+
+, in their paper, introduce an infrastructure to support reliable and cost-effec
+tive transactive energy, based on blockchain and smart contracts, where
+ functionalities are implemented as fully decentralised applications.
+ Energy transactions are stored in the blockchain, whose high replication
+ level ensures stronger guarantees against tampering.
+ According to transparent rules implemented as smart contracts, energy auctions
+ are carried out, hence visible to all involved actors.
+ Threats deriving from known vulnerabilities of smart meters are mitigated
+ by temporarily keeping out exposed prosumers and updating their devices
+ as soon as security patches become available.
+ A smart contract is the back bone of many block chain based technologies
+ where a contract is a self-executing contract with the terms of the agreement
+ between buyer and seller being directly written into lines of code, thus
+ eliminating the need for trust between the two parties.
+\end_layout
+
+\begin_layout Standard
+Beyond academic works, several startups and companies work-ing on transactive
+ energy and blockchain exist.
+ Exergy 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "exergy"
+literal "false"
+
+\end_inset
+
+ hasbeen the first company who applied blockchain to a transactivegrid by
+ delivering the Brooklyn Microgrid, the world’s firstever energy blockchain
+ transaction platform.
+ Electron 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "electron"
+literal "false"
+
+\end_inset
+
+, aUK startup, applies the blockchain technology to the energysector, for
+ building more efficient, resilient and flexible sys-tems.
+ They offer a smart contract-based platform for energytrading, smart meter
+ data privacy and facilities for energy andgas switching.
+ 
+\end_layout
+
 \begin_layout Subsection
 Communication
 \end_layout
@@ -5803,7 +6199,7 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
+placement h
 wide false
 sideways false
 status collapsed
